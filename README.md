@@ -24,3 +24,11 @@ image(volcano, col = pal(10))
 ```
 
 ![](README_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
+
+Individual palettes can be vizualized.
+
+```r
+viz_palette(ochre_palettes[["tasmania"]])
+```
+
+![](README_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
