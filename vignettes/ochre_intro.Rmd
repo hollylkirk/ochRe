@@ -59,10 +59,10 @@ for (i in 1:length(ochre_palettes)){
 
 ### Green-Blind (Deuteranopia)
 
-```{r dichromat_palettes}
+```{r dichromat_deutan}
 pal_names <- names(ochre_palettes)
 
-par(mfrow=c(11, 1), lheight = 2, mar=rep(1, 4), adj = 0)
+par(mfrow=c(12, 1), lheight = 2, mar=rep(1, 4), adj = 0)
 for (i in 1:length(ochre_palettes)){
     viz_palette(dichromat(ochre_palettes[[i]], "deutan"), pal_names[i])
 }
@@ -71,7 +71,7 @@ for (i in 1:length(ochre_palettes)){
 ### Red-Blind (Protanopia)
 
 
-```{r dichromat_palettes}
+```{r dichromat_protan}
 pal_names <- names(ochre_palettes)
 
 par(mfrow=c(11, 1), lheight = 2, mar=rep(1, 4), adj = 0)
@@ -83,7 +83,7 @@ for (i in 1:length(ochre_palettes)){
 ### Blue-Blind (Tritanopia)
 
 
-```{r dichromat_palettes}
+```{r dichromat_tritan}
 pal_names <- names(ochre_palettes)
 
 par(mfrow=c(11, 1), lheight = 2, mar=rep(1, 4), adj = 0)
@@ -95,7 +95,7 @@ for (i in 1:length(ochre_palettes)){
 ### Desaturated
 
 
-```{r dichromat_palettes}
+```{r desaturated}
 pal_names <- names(ochre_palettes)
 
 par(mfrow=c(11, 1), lheight = 2, mar=rep(1, 4), adj = 0)
