@@ -7,7 +7,7 @@
 viz_palette(pal)
 }
 \arguments{
-\item{pal}{palette name}
+\item{pal}{character, vector of (hexadecimal) colors characterizing a palette}
 }
 \description{
 Show an ochre palette

@@ -26,3 +26,8 @@ library(ochRe)
 pal <- colorRampPalette(ochre_palettes[["olsen_seq"]])
 image(volcano, col = pal(10))
 ```
+
+Individual palettes can be vizualized.
+```{r}
+viz_palette(ochre_palettes[["tasmania"]])
+```
