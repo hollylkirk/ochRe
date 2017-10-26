@@ -9,11 +9,3 @@ viz_palette <- function(obj, nam) {
           main = nam, ylab = "", xaxt = "n", yaxt = "n",  bty = "n",
           xlab = "")
 }
-
-order_palette <- function(pal) {
-    r <- col2rgb(pal) %>%
-        t %>%
-        as.data.frame %>%
-        arrange(red, green, blue)
-    with(r, rgb(red, green, blue, maxColorValue = 255))
-}
