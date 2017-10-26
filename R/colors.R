@@ -46,3 +46,18 @@ parliament <- c(
     "#90a8a8", # light blue
     "#c0a890", # light brown
 )
+
+## Fred Williams, Mount Nameless (morning)
+## http://www.art-almanac.com.au/wp-content/uploads/2013/11/benalla_mt_nameless_review_1213.jpg
+nameless <- c(
+    "#d23c1e", # 2
+    "#965a3c", # 1
+    "#96785a", # 6
+    "#b4783c", # 3
+    "#d2965a", # 7
+    "#b49678", # 10
+    "#b4d2d2", # 8
+    "#96b4d2", # 5
+    "#7896b4", # 4
+    "#5a7896"  # 9
+)
