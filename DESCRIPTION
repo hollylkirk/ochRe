@@ -10,6 +10,7 @@ Authors@R: c(person("Alicia", "Allan", role = c("aut")),
              person("Elle", "Saber", role = c("aut")))
 Description: Provide Australia-themed color palettes.
 Depends: R (>= 3.4.2)
+Imports: dplyr, grDevices, graphics
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
