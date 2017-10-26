@@ -4,9 +4,11 @@
 \alias{viz_palette}
 \title{Show an ochre palette}
 \usage{
-viz_palette(pal)
+viz_palette(obj, nam)
 }
 \arguments{
+\item{nam}{character, the name of the palette}
+
 \item{pal}{character, vector of (hexadecimal) colors characterizing a palette}
 }
 \description{
