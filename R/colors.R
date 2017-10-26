@@ -137,3 +137,26 @@ healthy_reef <- c(
     "#1c0608", # dark brown coral
     "#002B52" # dark blue
 )
+
+## Emily Kame Kngwarreye, Emu Woman 1988–89
+## http://www.nma.gov.au/exhibitions/utopia_the_genius_of_emily_kame_kngwarreye/emily_kame_kngwarreye
+emu_woman_paired <- c(
+   "#AB7E37", 
+   "#79222A",
+   "#562323",
+   "#333B43",
+   "#B68830",
+   "#232728",
+   "#B9ACA3",
+   "#7A2529",
+   "#2C374A",
+   "#120F11",
+   "#768B99",
+   "#6F2827",
+   "#7B939C",
+   "#BD852C",
+   "#AAAEB5",
+   "#78292F",
+   "#B6B0AE",
+   "#3A3A43"
+)
