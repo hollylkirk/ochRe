@@ -4,7 +4,7 @@
 ochre_palettes <- list(
     ## Albert Namatjira: Twin Ghosts
     ## http://www.menziesartbrands.com/sites/default/files/field/catalogue_items//DM_24017.jpg
-    namatjira = c(
+    namatjira_qual = c(
         "#d8f0f0",	
         "#786060",
         "#d8c0a8",	
@@ -13,6 +13,17 @@ ochre_palettes <- list(
         "#486090",
         "#a89078",
         "#f0a860"
+    ),
+    
+    namatjira_div = c(
+        "#786060", 
+        "#486090", 
+        "#a890a8", 
+        "#d8f0f0", 
+        "#f0a860", 
+        "#d8c0a8", 
+        "#a89078", 
+        "#a86030"
     ),
     
     ## Georgiana McCrae, "Melbourne, Collins St, 1841",
@@ -87,7 +98,7 @@ ochre_palettes <- list(
         "#8ca8c4", # dusky blue
         "#385438"  # dark green
     ),
-    olsen_seq = c(
+    olsen_div = c(
         "#701c00", 
         "#8c3800", 
         "#a85400", 
