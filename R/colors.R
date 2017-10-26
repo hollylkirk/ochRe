@@ -30,3 +30,14 @@ parliament <- c(
     "#90a8a8", # light blue
     "#c0a890", # light brown
 )
+
+
+tasmania <- c(
+    "#a84830", # bay of fires lychen
+    "#d89060", # lighter lychen
+    "#604830", # forest brown
+    "#6090d8", # wineglass bay blue
+    "#c0c0d8", # crater lake grey
+    "#183018", # fern green
+    "#486030", # enchanted walk moss
+)
