@@ -112,15 +112,51 @@ olsen_seq <- c(
 
 ## Fred Williams, Mount Nameless (morning)
 ## http://www.art-almanac.com.au/wp-content/uploads/2013/11/benalla_mt_nameless_review_1213.jpg
-nameless <- c(
-    "#d23c1e", # 2
-    "#965a3c", # 1
-    "#96785a", # 6
-    "#b4783c", # 3
-    "#d2965a", # 7
-    "#b49678", # 10
-    "#b4d2d2", # 8
-    "#96b4d2", # 5
-    "#7896b4", # 4
-    "#5a7896"  # 9
+## 7 30 y n
+williams_pilbara <- c(
+    "#d23c1e", # 3
+    "#965a3c", # 6
+    "#b4783c", # 2
+    "#b4d2d2", # 5
+    "#96b4b4", # 7
+    "#96b4d2", # 4
+    "#7896b4"  # 1
+)
+
+
+## Great Barrier reef, before global warming
+## based on http://aussiedestinationtours.com/wp-content/uploads/2014/07/Greatbarrierreef.jpg
+healthy_reef <- c(
+    "#f63b32", # hot coral
+    "#e37870", # coral pink
+    "#f3ff41", # bright yellow
+    "#005487", # deep blue
+    "#52bcd4", # blue sand
+    "#679c40", # sea green
+    "#f3fbfb", # white coral
+    "#1c0608", # dark brown coral
+    "#002B52" # dark blue
+)
+
+## Emily Kame Kngwarreye, Emu Woman 1988–89
+## http://www.nma.gov.au/exhibitions/utopia_the_genius_of_emily_kame_kngwarreye/emily_kame_kngwarreye
+emu_woman_paired <- c(
+   "#AB7E37", 
+   "#79222A",
+   "#562323",
+   "#333B43",
+   "#B68830",
+   "#232728",
+   "#B9ACA3",
+   "#7A2529",
+   "#2C374A",
+   "#120F11",
+   "#768B99",
+   "#6F2827",
+   "#7B939C",
+   "#BD852C",
+   "#AAAEB5",
+   "#78292F",
+   "#B6B0AE",
+   "#3A3A43"
 )
