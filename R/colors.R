@@ -40,6 +40,17 @@ parliament <- c(
     "#c0a890" # light brown
 )
 
+
+tasmania <- c(
+    "#a84830", # bay of fires lychen
+    "#d89060", # lighter lychen
+    "#604830", # forest brown
+    "#6090d8", # wineglass bay blue
+    "#c0c0d8", # crater lake grey
+    "#183018", # fern green
+    "#486030", # enchanted walk moss
+)
+
 ## Sydney Nolan, "Ned Kelly 1946",
 ## https://cs.nga.gov.au/detail.cfm?irn=28926
 nolan_ned <- c(
@@ -49,3 +60,4 @@ nolan_ned <- c(
     "#000000", # black
     "#481800"  # brown
     )
+
