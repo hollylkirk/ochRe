@@ -4,12 +4,20 @@
 \alias{viz_palette}
 \title{Show a single palette}
 \usage{
+<<<<<<< HEAD
 viz_palette(pal, ttl = "", num = length(pal))
+=======
+viz_palette(obj, name = NULL, num = length(obj))
+>>>>>>> c437cc2260556a426203fea40e2aa9bc8ad63cd3
 }
 \arguments{
 \item{pal}{character, vector of (hexadecimal) colours representing a palette}
 
+<<<<<<< HEAD
 \item{ttl}{character, title to be displayed (the name of the palette)}
+=======
+\item{name}{character, the name of the palette}
+>>>>>>> c437cc2260556a426203fea40e2aa9bc8ad63cd3
 
 \item{num}{numeric, the number of colours to display}
 }
