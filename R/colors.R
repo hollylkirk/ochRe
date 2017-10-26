@@ -177,10 +177,10 @@ ochre_palettes <- list(
  ## Rainbow lorikeet
  ## http://reptilepark.com.au/animals/birds/rainbow-lorikeet/
  lorikeet = c(
-     "486030",
-     "c03018",
-     "f0a800",
-     "484878",
-     "a8c018",
-     "609048"
+     "#486030",
+     "#c03018",
+     "#f0a800",
+     "#484878",
+     "#a8c018",
+     "#609048"
  ))
