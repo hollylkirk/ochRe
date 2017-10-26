@@ -2,7 +2,11 @@
 title: "ochre_intro"
 author: "Holly Kirk"
 date: "26 October 2017"
-output: html_document
+output: rmarkdown::html_vignette
+vignette: >
+    %\VignetteIndexEntry{ochRe}
+    %\VignetteEngine{knitr::rmarkdown}
+    \usepackage[utf8]{inputenc}
 ---
 
 # Introduction
