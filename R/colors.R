@@ -48,7 +48,7 @@ tasmania <- c(
     "#6090d8", # wineglass bay blue
     "#c0c0d8", # crater lake grey
     "#183018", # fern green
-    "#486030", # enchanted walk moss
+    "#486030" # enchanted walk moss
 )
 
 ## Sydney Nolan, "Ned Kelly 1946",
