@@ -26,7 +26,10 @@ devtools::install_github("ropenscilabs/ochre")
 # The Palettes
 
 The package contains eleven colour palettes: 
-
+Namatjira                   Mccrea_melbcollinsst_1841         Parliament               
+Tasmania                    Nolan_ned                         Winmar                   
+Olsen_qual                  Olsen_seq                         Williams_pilbara        
+Healthy_reef                Emu_woman_paired   
 
 
 Usage
@@ -48,44 +51,12 @@ for (i in 1:length(ochre_palettes)){
 }
 ```
 
-### Bottle Rocket (1996)
+### namatjira
 
-``` r
-wes_palette("BottleRocket1")
-```
+This palette is based on the painting "Twin Ghosts"" by Albert Namatjira
+It has eight colours
 
-![](figure/bottlerocket1-1.png)
+![alt text](http://www.menziesartbrands.com/sites/default/files/field/catalogue_items//DM_24017.jpg)
 
-``` r
-wes_palette("BottleRocket2")
-```
 
-![](figure/bottlerocket1-2.png)
 
-### Rushmore (1998)
-
-``` r
-wes_palette("Rushmore1")
-```
-
-![](figure/rushmore-1.png)
-
-### The Royal Tenenbaums (2001)
-
-``` r
-wes_palette("Royal1")
-```
-
-![](figure/royal-1.png)
-
-``` r
-wes_palette("Royal2")
-```
-
-![](figure/royal-2.png)
-
-``` r
-library("ggplot2")
-ggplot(mtcars, aes(factor(cyl), fill=factor(vs))) +  geom_bar() +
-  scale_fill_manual(values = wes_palette("Royal1"))
-```
