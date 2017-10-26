@@ -12,4 +12,3 @@ order_palette <- function(pal) {
         arrange(red, green, blue)
     with(r, rgb(red, green, blue, maxColorValue = 255))
 }
-    

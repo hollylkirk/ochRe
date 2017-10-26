@@ -29,27 +29,32 @@ mccrea_melbcollinsst_1841 <- c(
     "#c07848"
 )
     
+# based on the great all tapestry https://www.aph.gov.au/Visit_Parliament/Art/Top_5_Treasures/Great_Hall_Tapestry
+# and house of reps and senate colours https://www.peo.gov.au/learning/closer-look/australias-parliament-house/a-place-for-the-parliament.html
 parliament <- c(
     "#a84848", # senate red
-    "#304830", # dark green
-    "#607890", # grey blue
-    "#906030", # brown
     "#f0d8d8", # light pink/red
+    "#304830", # dark green
     "#909078", # grey green
+    "#607890", # grey blue
     "#90a8a8", # light blue
+    "#906030", # brown
     "#c0a890" # light brown
 )
 
 
+# based on photographs from cradle mountain national park and the bay of fires
+# random comment
 tasmania <- c(
     "#a84830", # bay of fires lychen
     "#d89060", # lighter lychen
     "#604830", # forest brown
     "#6090d8", # wineglass bay blue
     "#c0c0d8", # crater lake grey
-    "#183018", # fern green
+    "#606030", # fern green
     "#486030" # enchanted walk moss
 )
+
 
 ## Sydney Nolan, "Ned Kelly 1946",
 ## https://cs.nga.gov.au/detail.cfm?irn=28926
@@ -61,6 +66,21 @@ nolan_ned <- c(
     "#481800"  # brown
     )
 
+
+
+
+
+## Wayne Ludbey, "Nicky Winmar St Kilda Footballer", 1993
+## https://nga.gov.au/federation/Detail.cfm?WorkID=27707&ZoomID=3
+winmar <- c(
+    "#d8d8d8",
+    "#609060",
+    "#183030",
+    "#a8c090",
+    "#604848",
+    "#d8c0a8",
+    "#a86048"
+)
 
 ## John Olsen, "Sydney Sun, 1965",
 ## https://artsearch.nga.gov.au/Detail-LRG.cfm?IRN=26102
