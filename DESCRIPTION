@@ -1,9 +1,16 @@
 Package: ochRe
-Title: What the Package Does (one line, title case)
-Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Title: Australia-Themed Color Palettes
+Version: 1.0
+Authors@R: c(person("Alicia", "Allan", role = c("aut")),
+             person("Di", "Cook", role = c("aut")),
+             person("Ross", "Gaylor", role = c("aut")),
+             person("Holly", "Kirk", role = c("aut", "cre"),
+                    email = "hollylkirk@gmail.com"),
+             person("Roger", "Peng", role = c("aut")),
+             person("Elle", "Saber", role = c("aut")))
+Description: Provide Australia-themed color palettes.
 Depends: R (>= 3.4.2)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.0.1
