@@ -6,14 +6,10 @@
 #' @importFrom graphics plot par text
 viz_palette <- function(obj, nam) {
     image(1:length(obj), 1, as.matrix(1:length(obj)), col=obj, 
-          main = nam, ylab = "", xaxt = "n", yaxt = "n",  bty = "n")
+          main = nam, ylab = "", xaxt = "n", yaxt = "n",  bty = "n",
+          xlab = "")
 }
 
-#' Order an ochre palette automatically
-#'
-#' @param pal palette name
-#' @import dplyr
-#' @importFrom grDevices col2rgb
 order_palette <- function(pal) {
     r <- col2rgb(pal) %>%
         t %>%
