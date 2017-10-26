@@ -17,6 +17,17 @@ b <- ggplot(diamonds) +
     geom_bar(aes(x = cut, fill = clarity))
 b
 
+# Boxplot with 8 categories
+library(eechidna)
+ggplot(data = abs2011,
+       aes(x = reorder(State, -MedianIncome),
+           y = MedianIncome,
+           colour = State)) + 
+    geom_boxplot() + 
+    theme_minimal() + 
+    theme(legend.position = "none") + 
+    labs(x = "State")
+
 ## Tileplot
 a <- ggplot(faithfuld) +
     geom_tile(aes(waiting, eruptions, fill = density))
