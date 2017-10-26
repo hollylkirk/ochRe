@@ -20,13 +20,9 @@ namatjira <- c(
     "#f0a860"
 )
 
-parliament <- c(
-    "#a84848", # senate red
-    "#304830", # dark green
-    "#607890", # grey blue
-    "#906030", # brown
-    "#f0d8d8", # light pink/red
-    "#909078", # grey green
-    "#90a8a8", # light blue
-    "#c0a890", # light brown
-)
+
+nolan_ned <- c("#a89030",
+               "#004878",
+               "#78a890",
+               "#000000",
+               "#481800")
