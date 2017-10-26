@@ -175,6 +175,24 @@ ochre_palettes <- list(
         "#AAAEB5",
         "#78292F",
         "#B6B0AE",
-        "#3A3A43"
-    )
-)
+        "#3A3A43" ),
+ 
+    ## Galah
+ ## https://theconversation.com/how-the-australian-galah-got-its-name-in-a-muddle-65646
+ galah = c(
+     "#d84860",
+     "#a8a8a8",
+     "#f0a8c0",
+     "#787878",
+     "#903030"),
+ 
+ ## Rainbow lorikeet
+ ## http://reptilepark.com.au/animals/birds/rainbow-lorikeet/
+ lorikeet = c(
+     "#486030",
+     "#c03018",
+     "#f0a800",
+     "#484878",
+     "#a8c018",
+     "#609048"
+ ))
