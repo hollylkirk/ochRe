@@ -20,6 +20,22 @@ namatjira <- c(
     "#f0a860"
 )
 
+## Georgiana McCrae, "Melbourne, Collins St, 1841",
+## https://en.wikipedia.org/wiki/File:Melbourne_Collins_Street_1841.jpg
+mccrea_melbcollinsst_1841 <- c(
+    "#a8c0a8",
+    "#c0c0a8",
+    "#a8a890",
+    "#909078",
+    "#a8a8a8",
+    "#c0c0c0",
+    "#d8c0a8",
+    "#c09048",
+    "#c07848",
+    "#d89060",
+    "#c07848"
+)
+    
 parliament <- c(
     "#a84848", # senate red
     "#304830", # dark green
@@ -28,7 +44,7 @@ parliament <- c(
     "#f0d8d8", # light pink/red
     "#909078", # grey green
     "#90a8a8", # light blue
-    "#c0a890", # light brown
+    "#c0a890" # light brown
 )
 
 
@@ -41,3 +57,14 @@ tasmania <- c(
     "#183018", # fern green
     "#486030", # enchanted walk moss
 )
+
+## Sydney Nolan, "Ned Kelly 1946",
+## https://cs.nga.gov.au/detail.cfm?irn=28926
+nolan_ned <- c(
+    "#a89030", # ochre
+    "#004878", # sky blue
+    "#78a890", # dusty blue
+    "#000000", # black
+    "#481800"  # brown
+    )
+
