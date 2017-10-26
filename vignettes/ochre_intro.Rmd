@@ -32,18 +32,21 @@ The package contains eleven colour palettes:
 Usage
 -----
 
-``` r
-library("ochre")
+```{r use_names}
+library(ochRe)
 
-# See all palettes
+# See names of all palettes
 names(ochre_palettes)
-#>  [1] "BottleRocket1"  "BottleRocket2"  "Rushmore1"      "Royal1"        
-#>  [5] "Royal2"         "Zissou1"        "Darjeeling1"    "Darjeeling2"   
-#>  [9] "Chevalier1"     "FantasticFox1"  "Moonrise1"      "Moonrise2"     
-#> [13] "Moonrise3"      "Cavalcanti1"    "GrandBudapest1" "GrandBudapest2"
 ```
 
+```{r see_palettes}
+pal_names <- names(ochre_palettes)
 
+par(mfrow=c(11, 1), lheight = 2, mar=rep(1, 4), adj = 0)
+for (i in 1:length(ochre_palettes)){
+    viz_palette(ochre_palettes[[i]], pal_names[i])
+}
+```
 
 ### Bottle Rocket (1996)
 
