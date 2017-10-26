@@ -55,7 +55,7 @@ ochre_palettes <- list(
         "#486030" # enchanted walk moss
     ),
     
-    ## Sydney Nolan, "Ned Kelly 1946",
+    ## Sidney Nolan, "Ned Kelly 1946",
     ## https://cs.nga.gov.au/detail.cfm?irn=28926
     nolan_ned = c(
         "#a89030", # ochre

@@ -53,10 +53,37 @@ for (i in 1:length(ochre_palettes)){
 
 ### namatjira
 
-This palette is based on the painting "Twin Ghosts"" by Albert Namatjira
-It has eight colours
+This palette is based on the painting "Twin Ghosts"" by Albert Namatjira.
+It has eight colours.  
 
 ![alt text](http://www.menziesartbrands.com/sites/default/files/field/catalogue_items//DM_24017.jpg)
 
 
+### mccrea_melbcollinsst_1841
 
+This palette is based on the painting "Melbourne, Collins St, 1841" by Georgiana McCrae. 
+It has eleven colours.   
+
+![mccrea_melbcollinsst_1841](https://upload.wikimedia.org/wikipedia/commons/c/c0/Melbourne_Collins_Street_1841.jpg)
+
+
+### parliament
+
+This palette is based on based on the tapestry in the Great Hall of Parliament House, of a landscape by Arthur Boyd - Untitled (Shoalhaven Landscape), as well as the colours of the and House of Representatives and the Senate. 
+It has eight colours.   
+
+![Untitled (Shoalhaven Landscape)](https://www.aph.gov.au/~/media/06%20Visit%20Parliament/66%20Parl%20House%20Art%20Collection/661%20five%20treasures/five%20treasures%20detail%20pics/M19840057UntitledBOYDunframed.png?la=en)  
+  
+Parliament House:
+https://www.peo.gov.au/learning/closer-look/australias-parliament-house/a-place-for-the-parliament.html  
+
+### tasmania
+This palette is based on colours in the bay of fires and cradle mountain.
+It has seven colours.
+
+### nolan_ned
+This palette is based on the painting "Ned Kelly", 1946, by Sidney Nolan.
+It has five colours.
+
+
+![Ned Kelly](https://cs.nga.gov.au/images/lrg/28926.jpg)
