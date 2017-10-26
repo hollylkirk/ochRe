@@ -61,3 +61,31 @@ nolan_ned <- c(
     "#481800"  # brown
     )
 
+
+## John Olsen, "Sydney Sun, 1965",
+## https://artsearch.nga.gov.au/Detail-LRG.cfm?IRN=26102
+olsen_qual <- c(
+    "#c47000", # rusty yellow
+    "#e0c48c", # light tan
+    "#8c3800", # dark orange
+    "#e0a81c", # yellow
+    "#8ca8c4", # dusky blue
+    "#385438"  # dark green
+)
+
+olsen_seq <- c(
+    "#701c00", 
+    "#8c3800", 
+    "#a85400", 
+    "#c47000",
+    "#c48c1c",
+    "#e0a81c", 
+    "#e0c48c", 
+    "#e0e0e0",
+    "#c4c4c4",
+    "#8ca8c4", 
+    "#708ca8",
+    "#1c54a8",
+    "#385438",
+    "#38381c"
+)
