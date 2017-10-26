@@ -47,6 +47,7 @@ parliament <- c(
     "#c0a890" # light brown
 )
 
+
 ## Sydney Nolan, "Ned Kelly 1946",
 ## https://cs.nga.gov.au/detail.cfm?irn=28926
 nolan_ned <- c(
@@ -56,3 +57,19 @@ nolan_ned <- c(
     "#000000", # black
     "#481800"  # brown
     )
+
+
+
+
+
+## Wayne Ludbey, "Nicky Winmar St Kilda Footballer", 1993
+## https://nga.gov.au/federation/Detail.cfm?WorkID=27707&ZoomID=3
+winmar <- c(
+    "#d8d8d8",
+    "#609060",
+    "#183030",
+    "#a8c090",
+    "#604848",
+    "#d8c0a8",
+    "#a86048"
+)
