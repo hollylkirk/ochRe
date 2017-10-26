@@ -4,12 +4,12 @@
 \alias{viz_palette}
 \title{Show an ochre palette}
 \usage{
-viz_palette(obj, nam, num = length(obj))
+viz_palette(obj, name = NULL, num = length(obj))
 }
 \arguments{
 \item{obj}{character, vector of (hexadecimal) colors characterizing a palette}
 
-\item{nam}{character, the name of the palette}
+\item{name}{character, the name of the palette}
 
 \item{num}{numeric, the number of colors to use}
 }
