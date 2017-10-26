@@ -44,7 +44,57 @@ parliament <- c(
     "#f0d8d8", # light pink/red
     "#909078", # grey green
     "#90a8a8", # light blue
-    "#c0a890", # light brown
+    "#c0a890" # light brown
+)
+
+
+tasmania <- c(
+    "#a84830", # bay of fires lychen
+    "#d89060", # lighter lychen
+    "#604830", # forest brown
+    "#6090d8", # wineglass bay blue
+    "#c0c0d8", # crater lake grey
+    "#183018", # fern green
+    "#486030", # enchanted walk moss
+)
+
+## Sydney Nolan, "Ned Kelly 1946",
+## https://cs.nga.gov.au/detail.cfm?irn=28926
+nolan_ned <- c(
+    "#a89030", # ochre
+    "#004878", # sky blue
+    "#78a890", # dusty blue
+    "#000000", # black
+    "#481800"  # brown
+    )
+
+
+## John Olsen, "Sydney Sun, 1965",
+## https://artsearch.nga.gov.au/Detail-LRG.cfm?IRN=26102
+olsen_qual <- c(
+    "#c47000", # rusty yellow
+    "#e0c48c", # light tan
+    "#8c3800", # dark orange
+    "#e0a81c", # yellow
+    "#8ca8c4", # dusky blue
+    "#385438"  # dark green
+)
+
+olsen_seq <- c(
+    "#701c00", 
+    "#8c3800", 
+    "#a85400", 
+    "#c47000",
+    "#c48c1c",
+    "#e0a81c", 
+    "#e0c48c", 
+    "#e0e0e0",
+    "#c4c4c4",
+    "#8ca8c4", 
+    "#708ca8",
+    "#1c54a8",
+    "#385438",
+    "#38381c"
 )
 
 ## Fred Williams, Mount Nameless (morning)
