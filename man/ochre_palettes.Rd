@@ -3,12 +3,23 @@
 \docType{data}
 \name{ochre_palettes}
 \alias{ochre_palettes}
-\title{Australia Color Palettes}
+\title{Australian Colour Palettes}
 \format{An object of class \code{list} of length 14.}
 \usage{
 ochre_palettes
 }
 \description{
-Australia Color Palettes
+A collection of colour palettes inspired by the landscape and wildlife of Australia
+}
+\examples{
+
+# Make an x-y plot using the Namatjira palette
+df <- df<- data.frame(x = rnorm(20, 0, 20), y = rnorm(20, 0, 20))
+plot(df, col = ochre_palettes$namatjira_qual, pch = 19)
+
+# Make a histogram using the McCrea Collins Street palette
+df <- df<- data.frame(x = rnorm(500, 0, 20))
+hist(df$x, col = ochre_palettes$olsen_div, breaks = 14)
+
 }
 \keyword{datasets}
