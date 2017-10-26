@@ -1,3 +1,6 @@
+#' Show an ochre palette
+#'
+#' @param pal palette name
 viz_palette <- function(pal) {
     n <- length(pal)
     plot(1:n, rep(0, n), xaxt = "n", yaxt = "n", 
@@ -5,6 +8,9 @@ viz_palette <- function(pal) {
     text(1:n, rep(0.5, n), pal, srt = 90)
 }
 
+#' Order an ochre palette automatically
+#'
+#' @param pal palette name
 order_palette <- function(pal) {
     r <- col2rgb(pal) %>%
         t %>%
