@@ -122,3 +122,18 @@ williams_pilbara <- c(
     "#96b4d2", # 4
     "#7896b4"  # 1
 )
+
+
+## Great Barrier reef, before global warming
+## based on http://aussiedestinationtours.com/wp-content/uploads/2014/07/Greatbarrierreef.jpg
+healthy_reef <- c(
+    "#f63b32", # hot coral
+    "#e37870", # coral pink
+    "#f3ff41", # bright yellow
+    "#005487", # deep blue
+    "#52bcd4", # blue sand
+    "#679c40", # sea green
+    "#f3fbfb", # white coral
+    "#1c0608", # dark brown coral
+    "#002B52" # dark blue
+)
