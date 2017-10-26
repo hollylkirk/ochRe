@@ -18,4 +18,9 @@ This is a basic example of how to use `ochRe` in a plot
 
 ```r
 ## basic example code
+library(ochRe)
+pal <- colorRampPalette(ochre_palettes[["olsen_seq"]])
+image(volcano, col = pal(10))
 ```
+
+![](README_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
