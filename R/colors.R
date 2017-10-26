@@ -47,7 +47,8 @@ parliament <- c(
     "#c0a890" # light brown
 )
 
-
+## Sydney Nolan, "Ned Kelly 1946",
+## https://cs.nga.gov.au/detail.cfm?irn=28926
 nolan_ned <- c(
     "#a89030", # ochre
     "#004878", # sky blue
