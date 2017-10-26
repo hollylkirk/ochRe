@@ -3,13 +3,9 @@
 #' @param pal character, vector of (hexadecimal) colors characterizing a palette
 #' @export
 #' @importFrom graphics plot par text
-viz_palette <- function(pal) {
-    par(mar = c(1, 1, 1, 1))
-    n <- length(pal)
-    plot(1:n, rep(0, n), xaxt = "n", yaxt = "n", xlab = "", ylab = "",
-         col = pal, pch = 19, cex = 5, frame.plot = FALSE)
-    text(1:n, rep(0.5, n), pal, srt = 90)
-}
+viz_palette <- function(obj, nam) {
+    image(1:length(obj), 1, as.matrix(1:length(obj)), col=obj, 
+          main = nam, ylab = "", xaxt = "n", yaxt = "n",  bty = "n")}
 
 #' Order an ochre palette automatically
 #'
