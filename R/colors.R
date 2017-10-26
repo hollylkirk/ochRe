@@ -4,7 +4,7 @@
 ochre_palettes <- list(
     ## Albert Namatjira: Twin Ghosts
     ## http://www.menziesartbrands.com/sites/default/files/field/catalogue_items//DM_24017.jpg
-    namatjira = c(
+    namatjira_qual = c(
         "#d8f0f0",	
         "#786060",
         "#d8c0a8",	
@@ -13,6 +13,17 @@ ochre_palettes <- list(
         "#486090",
         "#a89078",
         "#f0a860"
+    ),
+    
+    namatjira_div = c(
+        "#786060", 
+        "#486090", 
+        "#a890a8", 
+        "#d8f0f0", 
+        "#f0a860", 
+        "#d8c0a8", 
+        "#a89078", 
+        "#a86030"
     ),
     
     ## Georgiana McCrae, "Melbourne, Collins St, 1841",
@@ -55,7 +66,7 @@ ochre_palettes <- list(
         "#486030" # enchanted walk moss
     ),
     
-    ## Sydney Nolan, "Ned Kelly 1946",
+    ## Sidney Nolan, "Ned Kelly 1946",
     ## https://cs.nga.gov.au/detail.cfm?irn=28926
     nolan_ned = c(
         "#a89030", # ochre
@@ -87,7 +98,7 @@ ochre_palettes <- list(
         "#8ca8c4", # dusky blue
         "#385438"  # dark green
     ),
-    olsen_seq = c(
+    olsen_div = c(
         "#701c00", 
         "#8c3800", 
         "#a85400", 
@@ -152,6 +163,24 @@ ochre_palettes <- list(
         "#AAAEB5",
         "#78292F",
         "#B6B0AE",
-        "#3A3A43"
-    )
-)
+        "#3A3A43" ),
+ 
+    ## Galah
+ ## https://theconversation.com/how-the-australian-galah-got-its-name-in-a-muddle-65646
+ galah = c(
+     "#d84860",
+     "#a8a8a8",
+     "#f0a8c0",
+     "#787878",
+     "#903030"),
+ 
+ ## Rainbow lorikeet
+ ## http://reptilepark.com.au/animals/birds/rainbow-lorikeet/
+ lorikeet = c(
+     "486030",
+     "c03018",
+     "f0a800",
+     "484878",
+     "a8c018",
+     "609048"
+ ))

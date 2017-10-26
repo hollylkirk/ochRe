@@ -2,7 +2,11 @@
 title: "ochre_intro"
 author: "Holly Kirk"
 date: "26 October 2017"
-output: html_document
+output: rmarkdown::html_vignette
+vignette: >
+    %\VignetteIndexEntry{ochRe}
+    %\VignetteEngine{knitr::rmarkdown}
+    %\VignetteEncoding{UTF-8}
 ---
 
 # Introduction
@@ -26,7 +30,10 @@ devtools::install_github("ropenscilabs/ochre")
 # The Palettes
 
 The package contains eleven colour palettes: 
-
+Namatjira                   Mccrea_melbcollinsst_1841         Parliament               
+Tasmania                    Nolan_ned                         Winmar                   
+Olsen_qual                  Olsen_seq                         Williams_pilbara        
+Healthy_reef                Emu_woman_paired   
 
 
 Usage
@@ -40,7 +47,7 @@ library(colorspace)
 names(ochre_palettes)
 ```
 
-```{r see_palettes}
+```{r see_palettes, fig.height = 8}
 pal_names <- names(ochre_palettes)
 
 par(mfrow=c(11, 1), lheight = 2, mar=rep(1, 4), adj = 0)
@@ -99,44 +106,39 @@ for (i in 1:length(ochre_palettes)){
 
 
 
-### Bottle Rocket (1996)
+### namatjira
 
-``` r
-wes_palette("BottleRocket1")
-```
+This palette is based on the painting "Twin Ghosts"" by Albert Namatjira.
+It has eight colours.  
 
-![](figure/bottlerocket1-1.png)
+![alt text](http://www.menziesartbrands.com/sites/default/files/field/catalogue_items//DM_24017.jpg)
 
-``` r
-wes_palette("BottleRocket2")
-```
 
-![](figure/bottlerocket1-2.png)
+### mccrea_melbcollinsst_1841
 
-### Rushmore (1998)
+This palette is based on the painting "Melbourne, Collins St, 1841" by Georgiana McCrae. 
+It has eleven colours.   
 
-``` r
-wes_palette("Rushmore1")
-```
+![mccrea_melbcollinsst_1841](https://upload.wikimedia.org/wikipedia/commons/c/c0/Melbourne_Collins_Street_1841.jpg)
 
-![](figure/rushmore-1.png)
 
-### The Royal Tenenbaums (2001)
+### parliament
 
-``` r
-wes_palette("Royal1")
-```
+This palette is based on based on the tapestry in the Great Hall of Parliament House, of a landscape by Arthur Boyd - Untitled (Shoalhaven Landscape), as well as the colours of the and House of Representatives and the Senate. 
+It has eight colours.   
 
-![](figure/royal-1.png)
+![Untitled (Shoalhaven Landscape)](https://www.aph.gov.au/~/media/06%20Visit%20Parliament/66%20Parl%20House%20Art%20Collection/661%20five%20treasures/five%20treasures%20detail%20pics/M19840057UntitledBOYDunframed.png?la=en)  
+  
+Parliament House:
+https://www.peo.gov.au/learning/closer-look/australias-parliament-house/a-place-for-the-parliament.html  
 
-``` r
-wes_palette("Royal2")
-```
+### tasmania
+This palette is based on colours in the bay of fires and cradle mountain.
+It has seven colours.
 
-![](figure/royal-2.png)
+### nolan_ned
+This palette is based on the painting "Ned Kelly", 1946, by Sidney Nolan.
+It has five colours.
 
-``` r
-library("ggplot2")
-ggplot(mtcars, aes(factor(cyl), fill=factor(vs))) +  geom_bar() +
-  scale_fill_manual(values = wes_palette("Royal1"))
-```
+
+![Ned Kelly](https://cs.nga.gov.au/images/lrg/28926.jpg)

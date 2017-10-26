@@ -1,21 +1,16 @@
 #' Show an ochre palette
 #'
-#' @param pal character, vector of (hexadecimal) colors characterizing a palette
+#' @param obj character, vector of (hexadecimal) colors characterizing a palette
+#' @param nam character, the name of the palette
+#' @param num numeric, the number of colors to use
 #' @export
-#' @importFrom graphics plot par text
-viz_palette <- function(obj, nam) {
-    image(1:length(obj), 1, as.matrix(1:length(obj)), col=obj, 
-          main = nam, ylab = "", xaxt = "n", yaxt = "n",  bty = "n")}
-
-#' Order an ochre palette automatically
-#'
-#' @param pal palette name
-#' @import dplyr
-#' @importFrom grDevices col2rgb
-order_palette <- function(pal) {
-    r <- col2rgb(pal) %>%
-        t %>%
-        as.data.frame %>%
-        arrange(red, green, blue)
-    with(r, rgb(red, green, blue, maxColorValue = 255))
+#' @importFrom graphics image
+#' @importFrom grDevices colorRampPalette
+viz_palette <- function(obj, nam, num = length(obj)) {
+    if(num <= 0)
+        stop("'num' should be > 0")
+    pal_func <- colorRampPalette(obj)
+    image(seq_len(num), 1, as.matrix(seq_len(num)), col = pal_func(num), 
+          main = nam, ylab = "", xaxt = "n", yaxt = "n",  bty = "n",
+          xlab = "")
 }
