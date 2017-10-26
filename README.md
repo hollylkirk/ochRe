@@ -32,3 +32,10 @@ viz_palette(ochre_palettes[["tasmania"]], "tasmania")
 ```
 
 ![](README_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+
+
+```r
+viz_palette(ochre_palettes[["tasmania"]], "tasmania", 100)
+```
+
+![](README_files/figure-html/unnamed-chunk-3-1.png)<!-- -->

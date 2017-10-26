@@ -31,3 +31,7 @@ Individual palettes can be vizualized.
 ```{r}
 viz_palette(ochre_palettes[["tasmania"]], "tasmania")
 ```
+
+```{r}
+viz_palette(ochre_palettes[["tasmania"]], "tasmania", 100)
+```

@@ -2,6 +2,5 @@
 
 export(ochre_palettes)
 export(viz_palette)
-importFrom(graphics,par)
-importFrom(graphics,plot)
-importFrom(graphics,text)
+importFrom(grDevices,colorRampPalette)
+importFrom(graphics,image)
