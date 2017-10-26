@@ -5,3 +5,84 @@ date: "26 October 2017"
 output: html_document
 ---
 
+# Introduction
+
+"Welcome to all people... To this land of ochre" - Ruby Hunter
+
+The [**ochre**](CRAN link?) package contains colour palettes inspired by the Australian landscape, iconic Australian artists and images. 
+
+# Installation
+
+``` r
+install.packages("ochre")
+```
+
+**Or the development version**
+
+``` r
+devtools::install_github("ropenscilabs/ochre")
+```
+
+# The Palettes
+
+The package contains eleven colour palettes: 
+
+
+
+Usage
+-----
+
+``` r
+library("ochre")
+
+# See all palettes
+names(ochre_palettes)
+#>  [1] "BottleRocket1"  "BottleRocket2"  "Rushmore1"      "Royal1"        
+#>  [5] "Royal2"         "Zissou1"        "Darjeeling1"    "Darjeeling2"   
+#>  [9] "Chevalier1"     "FantasticFox1"  "Moonrise1"      "Moonrise2"     
+#> [13] "Moonrise3"      "Cavalcanti1"    "GrandBudapest1" "GrandBudapest2"
+```
+
+
+
+### Bottle Rocket (1996)
+
+``` r
+wes_palette("BottleRocket1")
+```
+
+![](figure/bottlerocket1-1.png)
+
+``` r
+wes_palette("BottleRocket2")
+```
+
+![](figure/bottlerocket1-2.png)
+
+### Rushmore (1998)
+
+``` r
+wes_palette("Rushmore1")
+```
+
+![](figure/rushmore-1.png)
+
+### The Royal Tenenbaums (2001)
+
+``` r
+wes_palette("Royal1")
+```
+
+![](figure/royal-1.png)
+
+``` r
+wes_palette("Royal2")
+```
+
+![](figure/royal-2.png)
+
+``` r
+library("ggplot2")
+ggplot(mtcars, aes(factor(cyl), fill=factor(vs))) +  geom_bar() +
+  scale_fill_manual(values = wes_palette("Royal1"))
+```
