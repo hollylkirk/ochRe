@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #' Show a single palette
 #' 
 #' Display a single palette to see whether it meets your needs.
@@ -23,26 +22,10 @@
 #' @importFrom grDevices colorRampPalette
 #' 
 viz_palette <- function(pal, ttl = "", num = length(pal)) {
-=======
-#' Show an ochre palette
-#'
-#' @param obj character, vector of (hexadecimal) colors characterizing a palette
-#' @param name character, the name of the palette
-#' @param num numeric, the number of colors to use
-#' @export
-#' @importFrom graphics image
-#' @importFrom grDevices colorRampPalette
-viz_palette <- function(obj, name = NULL, num = length(obj)) {
->>>>>>> c437cc2260556a426203fea40e2aa9bc8ad63cd3
     if(num <= 0)
         stop("'num' should be > 0")
     pal_func <- colorRampPalette(pal)
     image(seq_len(num), 1, as.matrix(seq_len(num)), col = pal_func(num), 
-<<<<<<< HEAD
           main = paste0(ttl, " (", length(pal), " colours in palette, ", num, " displayed)"), 
           xlab = "", ylab = "", xaxt = "n", yaxt = "n",  bty = "n")
-=======
-          main = name, ylab = "", xaxt = "n", yaxt = "n",  bty = "n",
-          xlab = "")
->>>>>>> c437cc2260556a426203fea40e2aa9bc8ad63cd3
 }
