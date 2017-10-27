@@ -41,7 +41,8 @@ Usage
 
 ```{r use_names}
 library(ochRe)
-
+library(dichromat)
+library(colorspace)
 # See names of all palettes
 names(ochre_palettes)
 ```
@@ -49,9 +50,49 @@ names(ochre_palettes)
 ```{r see_palettes, fig.height = 8}
 pal_names <- names(ochre_palettes)
 
-par(mfrow=c(11, 1), lheight = 2, mar=rep(1, 4), adj = 0)
+par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
 for (i in 1:length(ochre_palettes)){
     viz_palette(ochre_palettes[[i]], pal_names[i])
+}
+```
+
+
+## Colour blindness check
+
+
+
+### Green-Blind (Deuteranopia)
+```{r dichromate_deat}
+par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
+for (i in 1:length(ochre_palettes)){
+    viz_palette(dichromat(ochre_palettes[[i]], "deutan"), pal_names[i])
+}
+```
+
+
+### Red-Blind (Protanopia)
+```{r dichromate_protan}
+par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
+for (i in 1:length(ochre_palettes)){
+    viz_palette(dichromat(ochre_palettes[[i]], "protan"), pal_names[i])
+}
+```
+
+
+### Blue-Blind (Tritanopia)
+```{r dichromate_tritan}
+par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
+for (i in 1:length(ochre_palettes)){
+    viz_palette(dichromat(ochre_palettes[[i]], "tritan"), pal_names[i])
+}
+```
+
+
+### Desaturated
+```{r desaturate}
+par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
+for (i in 1:length(ochre_palettes)){
+    viz_palette(desaturate(ochre_palettes[[i]]), pal_names[i])
 }
 ```
 
