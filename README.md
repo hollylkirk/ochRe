@@ -19,7 +19,7 @@ This is a basic example of how to use `ochRe` in a plot
 ```r
 ## basic example code
 library(ochRe)
-pal <- colorRampPalette(ochre_palettes[["olsen_seq"]])
+pal <- colorRampPalette(ochre_palettes[["winmar"]])
 image(volcano, col = pal(10))
 ```
 
