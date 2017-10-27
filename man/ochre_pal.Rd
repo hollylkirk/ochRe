@@ -4,12 +4,14 @@
 \alias{ochre_pal}
 \title{ochre palette with ramped colours}
 \usage{
-ochre_pal(palette = "namatjira_qual", alpha = 1)
+ochre_pal(palette = "namatjira_qual", alpha = 1, reverse = FALSE)
 }
 \arguments{
 \item{palette}{Choose from 'ochre_palettes' list}
 
 \item{alpha}{transparency}
+
+\item{reverse}{If TRUE, the direction of the colours is reversed.}
 }
 \description{
 ochre palette with ramped colours

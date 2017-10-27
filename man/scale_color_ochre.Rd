@@ -6,10 +6,10 @@
 \title{Setup colour palette for ggplot2}
 \usage{
 scale_color_ochre(..., palette = "namatjira_qual", discrete = TRUE,
-  alpha = 1)
+  alpha = 1, reverse = FALSE)
 
 scale_colour_ochre(..., palette = "namatjira_qual", discrete = TRUE,
-  alpha = 1)
+  alpha = 1, reverse = FALSE)
 }
 \arguments{
 \item{...}{parameters to \code{discrete_scale} or \code{scale_fill_gradientn}}

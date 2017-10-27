@@ -4,6 +4,7 @@
 #'
 #' @param alpha transparency
 #'
+#' @param reverse If TRUE, the direction of the colours is reversed.
 #'
 #' @examples
 #' library(scales)
@@ -12,8 +13,11 @@
 #' filled.contour(volcano,color.palette = ochre_pal(), asp=1)
 #' 
 #' @export
-ochre_pal <- function(palette="namatjira_qual", alpha = 1) {
+ochre_pal <- function(palette="namatjira_qual", alpha = 1, reverse = FALSE) {
     pal <- ochre_palettes[[palette]]
+    if (reverse){
+        pal <- rev(pal)
+    }
     return(colorRampPalette(pal, alpha))
 }
 
@@ -44,11 +48,11 @@ ochre_pal <- function(palette="namatjira_qual", alpha = 1) {
 #' 
 #' @importFrom ggplot2 discrete_scale scale_color_gradientn
 scale_color_ochre <- function(..., palette="namatjira_qual", 
-                              discrete = TRUE, alpha = 1) {
+                              discrete = TRUE, alpha = 1, reverse = FALSE) {
    if (discrete) {
-       discrete_scale("colour", "ochre", palette=ochre_pal(palette, alpha = alpha))
+       discrete_scale("colour", "ochre", palette=ochre_pal(palette, alpha = alpha, reverse = reverse))
    } else {
-       scale_color_gradientn(colours = ochre_pal(palette, alpha = alpha, ...)(256))
+       scale_color_gradientn(colours = ochre_pal(palette, alpha = alpha, reverse = reverse, ...)(256))
    }
     #scale_colour_manual(values=ochre_palettes[[palette]])
 }
@@ -62,16 +66,17 @@ scale_colour_ochre <- scale_color_ochre
 #' @param palette Choose from 'ochre_palettes' list
 #' 
 #' @inheritParams viridis::scale_fill_viridis
+#' @inheritParams ochre_pal
 #'
 #' @importFrom ggplot2 scale_fill_manual discrete_scale scale_fill_gradientn
 #'
 #' @export
 scale_fill_ochre <- function(..., palette="namatjira_qual", 
-                              discrete = TRUE, alpha=1) {
+                              discrete = TRUE, alpha=1, reverse = TRUE) {
     if (discrete) {
-        discrete_scale("fill", "ochre", palette=ochre_pal(palette, alpha = alpha))
+        discrete_scale("fill", "ochre", palette=ochre_pal(palette, alpha = alpha, reverse = reverse))
     }
     else {
-        scale_fill_gradientn(colours = ochre_pal(palette, alpha = alpha, ...)(256))
+        scale_fill_gradientn(colours = ochre_pal(palette, alpha = alpha, reverse = reverse, ...)(256))
     }
 }
