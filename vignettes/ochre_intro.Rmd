@@ -14,6 +14,7 @@ knitr::opts_chunk$set(fig.width = 7, echo = FALSE)
 library(ochRe)
 library(dichromat)
 library(colorspace)
+library(elevatr)
 ```
 
 # Introduction
@@ -128,7 +129,7 @@ Here the default palette `namatjira_qual` is used in a stacked bar chart using t
 load("../data/oz_elev.rda")
 library(elevatr)
 library(raster)
-par(mfrow=c(4, 4))
+par(mfrow=c(6, 3))
 for (curCol in ochre_palettes%>%names()){
     colpal <- ochre_pal(palette = curCol)(150)
     ex <- extent(110, 155, -45, -10)
@@ -219,4 +220,13 @@ This palette is based on the colours of the rainbow lorikeet. It has six colours
 
 http://reptilepark.com.au/wp-content/uploads/2015/11/birds_rainbow_lorikeet2.jpg
 
+### dead_reef
+This palette is based on the colours a bleached barrier reef. It has six colours.  
+
+http://cdn.newsapi.com.au/image/v1/7c2f433cd1e020a6ad1b7018070c55a6 
+
+### jumping frog
+This palette is based on "Jumping Frog", c1982 by John Olsen. It has five colours.  
+
+http://cdn.artserieshotels.com.au/images/made/images/remote/http_cdn.artserieshotels.com.au/images/uploads/main/john-olsen-artist-artwork1_600_400_60.jpg
 
