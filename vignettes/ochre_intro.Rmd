@@ -1,5 +1,5 @@
 ---
-title: "ochre_intro"
+title: "ochRe"
 author: "PARDaHlotE"
 date: "26 October 2017"
 output: rmarkdown::html_vignette
@@ -21,7 +21,8 @@ library(elevatr)
 
 "Welcome to all people... To this land of ochre" - Ruby Hunter
 
-The [**ochre**](CRAN link?) package contains colour palettes inspired by the Australian landscape, iconic Australian artists and images. 
+The [**ochre**](https://github.com/ropenscilabs/ochRe) package contains colour palettes inspired by the Australian landscape, iconic Australian artists and images. 
+
 
 # Installation
 
@@ -124,6 +125,7 @@ Here the default palette `namatjira_qual` is used in a stacked bar chart using t
 
 ```
 
+The following shows elevation in Australia with each of the palettes.
 
 ```{r maps, echo=TRUE, message=FALSE, fig.height=8}
 load("../data/oz_elev.rda")
@@ -225,7 +227,7 @@ This palette is based on the colours a bleached barrier reef. It has six colours
 
 http://cdn.newsapi.com.au/image/v1/7c2f433cd1e020a6ad1b7018070c55a6 
 
-### jumping frog
+### jumping_frog
 This palette is based on "Jumping Frog", c1982 by John Olsen. It has five colours.  
 
 http://cdn.artserieshotels.com.au/images/made/images/remote/http_cdn.artserieshotels.com.au/images/uploads/main/john-olsen-artist-artwork1_600_400_60.jpg
