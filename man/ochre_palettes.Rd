@@ -26,5 +26,21 @@ ggplot(df, aes(x, y, colour=cl, shape=cl)) +
 ggplot(df, aes(x, fill=cl)) + geom_histogram() +
   scale_fill_ochre(palette="mccrea")
 
+\dontrun{
+  load("data/oz_elev.rda")
+  library(elevatr)
+  library(raster)
+  library(ochRe)
+  colpal <- ochre_pal()(150)
+  ex <- extent(110, 155, -45, -10)
+  elev <- raster::crop(elev, ex)
+  elev[elev < 0] <- NA
+  topo <- list(x = xFromCol(elev), y = rev(yFromRow(elev)), 
+               z = t(as.matrix(elev))[, nrow(elev):1])
+               par(mar = rep(0, 4), bg = "#444444")
+               image(topo, useRaster = TRUE, col = colpal,
+                     axes = FALSE, xlab = "", ylab = "",
+                           asp = cos(27.5 * pi/180))
+}
 }
 \keyword{datasets}
