@@ -2,19 +2,19 @@
 % Please edit documentation in R/scales.R
 \name{ochre_pal}
 \alias{ochre_pal}
-\title{ochre palette (discrete)}
+\title{ochre palette with ramped colours}
 \usage{
 ochre_pal(n, palette = "namatjira_qual", alpha = 1)
 }
 \arguments{
 \item{n}{number of colours when using the ramp}
 
-\item{palette}{}
+\item{palette}{Choose from 'ochre_palettes' list}
 
-\item{alpha}{transpreancy}
+\item{alpha}{transparency}
 }
 \description{
-ochre palette (discrete)
+ochre palette with ramped colours
 }
 \examples{
 library(scales)
