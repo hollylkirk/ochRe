@@ -10,10 +10,11 @@ vignette: >
 ---
 
 ```{r setup, echo = FALSE, message = FALSE}
-knitr::opts_chunk$set(fig.width = 7)
+knitr::opts_chunk$set(fig.width = 7, echo = FALSE)
 library(ochRe)
 library(dichromat)
 library(colorspace)
+
 ```
 
 # Introduction
@@ -36,17 +37,12 @@ devtools::install_github("ropenscilabs/ochre")
 
 # The Palettes
 
-The package contains eleven colour palettes: 
-Namatjira                   Mccrea_melbcollinsst_1841         Parliament               
-Tasmania                    Nolan_ned                         Winmar                   
-Olsen_qual                  Olsen_seq                         Williams_pilbara        
-Healthy_reef                Emu_woman_paired   
-
+The package contains fourteen colour palettes.
 
 Usage
 -----
 
-```{r use_names}
+```{r use_names, echo=TRUE}
 
 # See names of all palettes
 names(ochre_palettes)
@@ -63,11 +59,10 @@ for (i in 1:length(ochre_palettes)){
 
 
 ## Colour blindness check
-These plots show how each of the palettes perform for different types of colour blind, using dichromat.
-
+These plots show how each of the palettes perform for different types of colour blind, using dichromat. Recommended palettes are galah, namatjira, williams pilbara, and healthy reef  
 
 ### Green-Blind (Deuteranopia)
-```{r dichromate_deat}
+```{r dichromate_deat, fig.height = 8}
 par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
 for (i in 1:length(ochre_palettes)){
     viz_palette(dichromat(ochre_palettes[[i]], "deutan"), pal_names[i])
@@ -76,7 +71,7 @@ for (i in 1:length(ochre_palettes)){
 
 
 ### Red-Blind (Protanopia)
-```{r dichromate_protan}
+```{r dichromate_protan, fig.height = 8}
 par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
 for (i in 1:length(ochre_palettes)){
     viz_palette(dichromat(ochre_palettes[[i]], "protan"), pal_names[i])
@@ -85,7 +80,7 @@ for (i in 1:length(ochre_palettes)){
 
 
 ### Blue-Blind (Tritanopia)
-```{r dichromate_tritan}
+```{r dichromate_tritan, fig.height = 8}
 par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
 for (i in 1:length(ochre_palettes)){
     viz_palette(dichromat(ochre_palettes[[i]], "tritan"), pal_names[i])
@@ -94,35 +89,33 @@ for (i in 1:length(ochre_palettes)){
 
 
 ### Desaturated
-```{r desaturate}
+```{r desaturate, fig.height = 8}
 par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
 for (i in 1:length(ochre_palettes)){
     viz_palette(desaturate(ochre_palettes[[i]]), pal_names[i])
 }
 ```
 
-### namatjira
+### namatjira_qual and namatjira_div
 
-This palette is based on the painting "Twin Ghosts"" by Albert Namatjira.
-It has eight colours.  
+These palettes are based on the painting "Twin Ghosts"" by Albert Namatjira. Each palette has eight colours.
 
-![alt text](http://www.menziesartbrands.com/sites/default/files/field/catalogue_items//DM_24017.jpg)
+![alt text](http://www.menziesartbrands.com/sites/default/files/field/catalogue_items//DM_24017.jpg){width=50%}
 
 
-### mccrea_melbcollinsst_1841
+### mccrea
 
 This palette is based on the painting "Melbourne, Collins St, 1841" by Georgiana McCrae. 
 It has eleven colours.   
 
-![mccrea_melbcollinsst_1841](https://upload.wikimedia.org/wikipedia/commons/c/c0/Melbourne_Collins_Street_1841.jpg)
-
+![mccrea](https://upload.wikimedia.org/wikipedia/commons/c/c0/Melbourne_Collins_Street_1841.jpg){width=50%}
 
 ### parliament
 
 This palette is based on based on the tapestry in the Great Hall of Parliament House, of a landscape by Arthur Boyd - Untitled (Shoalhaven Landscape), as well as the colours of the and House of Representatives and the Senate. 
 It has eight colours.   
 
-![Untitled (Shoalhaven Landscape)](https://www.aph.gov.au/~/media/06%20Visit%20Parliament/66%20Parl%20House%20Art%20Collection/661%20five%20treasures/five%20treasures%20detail%20pics/M19840057UntitledBOYDunframed.png?la=en)  
+![Untitled (Shoalhaven Landscape)](https://www.aph.gov.au/~/media/06%20Visit%20Parliament/66%20Parl%20House%20Art%20Collection/661%20five%20treasures/five%20treasures%20detail%20pics/M19840057UntitledBOYDunframed.png?la=en){width=50%}  
   
 Parliament House:
 https://www.peo.gov.au/learning/closer-look/australias-parliament-house/a-place-for-the-parliament.html  
@@ -136,4 +129,4 @@ This palette is based on the painting "Ned Kelly", 1946, by Sidney Nolan.
 It has five colours.
 
 
-![Ned Kelly](https://cs.nga.gov.au/images/lrg/28926.jpg)
+![Ned Kelly](https://cs.nga.gov.au/images/lrg/28926.jpg){width=50%}
