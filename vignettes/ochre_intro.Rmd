@@ -9,6 +9,13 @@ vignette: >
     %\VignetteEncoding{UTF-8}
 ---
 
+```{r setup, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(fig.width = 7)
+library(ochRe)
+library(dichromat)
+library(colorspace)
+```
+
 # Introduction
 
 "Welcome to all people... To this land of ochre" - Ruby Hunter
@@ -40,9 +47,7 @@ Usage
 -----
 
 ```{r use_names}
-library(ochRe)
-library(dichromat)
-library(colorspace)
+
 # See names of all palettes
 names(ochre_palettes)
 ```
@@ -58,7 +63,7 @@ for (i in 1:length(ochre_palettes)){
 
 
 ## Colour blindness check
-
+These plots show how each of the palettes perform for different types of colour blind, using dichromat.
 
 
 ### Green-Blind (Deuteranopia)
