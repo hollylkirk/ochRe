@@ -3,7 +3,7 @@ Title: Australia-Themed Color Palettes
 Version: 1.0
 Authors@R: c(person("Alicia", "Allan", role = c("aut")),
              person("Di", "Cook", role = c("aut")),
-             person("Ross", "Gaylor", role = c("aut")),
+             person("Ross", "Gayler", role = c("aut")),
              person("Holly", "Kirk", role = c("aut", "cre"),
                     email = "hollylkirk@gmail.com"),
              person("Roger", "Peng", role = c("aut")),
