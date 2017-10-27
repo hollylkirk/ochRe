@@ -30,6 +30,11 @@ ochre_pal <- function(n, palette="namatjira_qual", alpha = 1) {
 #' ggplot(mtcars, aes(mpg, wt)) + 
 #'   geom_point(aes(colour = factor(cyl))) +     
 #'   scale_colour_ochre(palette="olsen_qual")
+#' ggplot(data = mpg) + 
+#'   geom_point(mapping = aes(x = displ, y = hwy, color = class)) +
+#'   scale_colour_ochre(palette="winmar")
+#' ggplot(diamonds) + geom_bar(aes(x = cut, fill = clarity)) +
+#'   scale_fill_ochre()
 #' @export
 scale_color_ochre <- function(..., palette="namatjira_qual", 
                               discrete = TRUE) {
