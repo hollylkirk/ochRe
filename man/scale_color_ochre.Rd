@@ -4,7 +4,8 @@
 \alias{scale_color_ochre}
 \title{Setup colour palette for ggplot2}
 \usage{
-scale_color_ochre(..., palette = "namatjira_qual", discrete = TRUE)
+scale_color_ochre(..., palette = "namatjira_qual", discrete = TRUE,
+  alpha = 1)
 }
 \arguments{
 \item{palette}{Choose from 'ochre_palettes' list}
@@ -17,4 +18,12 @@ library(tidyverse)
 ggplot(mtcars, aes(mpg, wt)) + 
   geom_point(aes(colour = factor(cyl))) +     
   scale_colour_ochre(palette="olsen_qual")
+ggplot(mtcars, aes(mpg, wt)) + 
+  geom_point(aes(colour = hp)) +     
+  scale_colour_ochre(palette="olsen_qual", discrete = FALSE)
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color = class)) +
+  scale_colour_ochre(palette="winmar")
+ggplot(diamonds) + geom_bar(aes(x = cut, fill = clarity)) +
+  scale_fill_ochre()
 }

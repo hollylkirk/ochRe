@@ -4,14 +4,14 @@
 \alias{ochre_pal}
 \title{ochre palette with ramped colours}
 \usage{
-ochre_pal(n, palette = "namatjira_qual", alpha = 1)
+ochre_pal(palette = "namatjira_qual", alpha = 1)
 }
 \arguments{
-\item{n}{number of colours when using the ramp}
-
 \item{palette}{Choose from 'ochre_palettes' list}
 
 \item{alpha}{transparency}
+
+\item{n}{number of colours when using the ramp}
 }
 \description{
 ochre palette with ramped colours

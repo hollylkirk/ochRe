@@ -4,7 +4,8 @@
 \alias{scale_fill_ochre}
 \title{#' Setup fill palette for ggplot2}
 \usage{
-scale_fill_ochre(..., palette = "namatjira_qual", discrete = TRUE)
+scale_fill_ochre(..., palette = "namatjira_qual", discrete = TRUE,
+  alpha = 1)
 }
 \arguments{
 \item{palette}{Choose from 'ochre_palettes' list}
