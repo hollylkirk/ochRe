@@ -37,12 +37,7 @@ devtools::install_github("ropenscilabs/ochre")
 
 # The Palettes
 
-The package contains eleven colour palettes: 
-Namatjira                   Mccrea_melbcollinsst_1841         Parliament               
-Tasmania                    Nolan_ned                         Winmar                   
-Olsen_qual                  Olsen_seq                         Williams_pilbara        
-Healthy_reef                Emu_woman_paired   
-
+The package contains fourteen colour palettes.
 
 Usage
 -----
@@ -101,10 +96,9 @@ for (i in 1:length(ochre_palettes)){
 }
 ```
 
-### namatjira
+### namatjira_qual and namatjira_div
 
-This palette is based on the painting "Twin Ghosts"" by Albert Namatjira.
-It has eight colours.  
+These palettes are based on the painting "Twin Ghosts"" by Albert Namatjira. Each palette has eight colours.
 
 ![alt text](http://www.menziesartbrands.com/sites/default/files/field/catalogue_items//DM_24017.jpg){width=50%}
 
@@ -121,7 +115,7 @@ It has eleven colours.
 This palette is based on based on the tapestry in the Great Hall of Parliament House, of a landscape by Arthur Boyd - Untitled (Shoalhaven Landscape), as well as the colours of the and House of Representatives and the Senate. 
 It has eight colours.   
 
-![Untitled (Shoalhaven Landscape)](https://www.aph.gov.au/~/media/06%20Visit%20Parliament/66%20Parl%20House%20Art%20Collection/661%20five%20treasures/five%20treasures%20detail%20pics/M19840057UntitledBOYDunframed.png?la=en)  
+![Untitled (Shoalhaven Landscape)](https://www.aph.gov.au/~/media/06%20Visit%20Parliament/66%20Parl%20House%20Art%20Collection/661%20five%20treasures/five%20treasures%20detail%20pics/M19840057UntitledBOYDunframed.png?la=en){width=50%}  
   
 Parliament House:
 https://www.peo.gov.au/learning/closer-look/australias-parliament-house/a-place-for-the-parliament.html  
@@ -135,4 +129,4 @@ This palette is based on the painting "Ned Kelly", 1946, by Sidney Nolan.
 It has five colours.
 
 
-![Ned Kelly](https://cs.nga.gov.au/images/lrg/28926.jpg)
+![Ned Kelly](https://cs.nga.gov.au/images/lrg/28926.jpg){width=50%}

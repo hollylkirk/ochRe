@@ -40,7 +40,7 @@ ochre_palettes <- list(
     
     ## Georgiana McCrae, "Melbourne, Collins St, 1841",
     ## https://en.wikipedia.org/wiki/File:Melbourne_Collins_Street_1841.jpg
-    mccrea_melbcollinsst_1841 = c(
+    mccrea = c(
         "#a8c0a8",
         "#c0c0a8",
         "#a8a890",
@@ -53,6 +53,7 @@ ochre_palettes <- list(
         "#d89060",
         "#c07848"
     ),
+    
     # based on the great all tapestry https://www.aph.gov.au/Visit_Parliament/Art/Top_5_Treasures/Great_Hall_Tapestry
     # and house of reps and senate colours https://www.peo.gov.au/learning/closer-look/australias-parliament-house/a-place-for-the-parliament.html
     parliament = c(
@@ -110,7 +111,7 @@ ochre_palettes <- list(
         "#8ca8c4", # dusky blue
         "#385438"  # dark green
     ),
-    olsen_div = c(
+    olsen_seq = c(
         "#701c00", 
         "#8c3800", 
         "#a85400", 
