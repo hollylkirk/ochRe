@@ -4,7 +4,7 @@
 \name{ochre_palettes}
 \alias{ochre_palettes}
 \title{Australian Colour Palettes}
-\format{An object of class \code{list} of length 14.}
+\format{An object of class \code{list} of length 16.}
 \usage{
 ochre_palettes
 }
