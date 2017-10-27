@@ -21,5 +21,7 @@ Suggests: knitr,
     colorspace,
     dichromat,
     scales,
-    tidyverse
+    tidyverse,
+    elevatr,
+    raster
 VignetteBuilder: knitr
