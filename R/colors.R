@@ -5,8 +5,13 @@
 #'@examples
 #'
 #' # Make an x-y plot using the Namatjira palette
-#' df <- df<- data.frame(x = rnorm(20, 0, 20), y = rnorm(20, 0, 20))
-#' plot(df, col = ochre_palettes$namatjira_qual, pch = 19)
+#' library(tidyverse)
+#' df <- data.frame(x = rnorm(20, 0, 20), 
+#'           y = rnorm(20, 0, 20), 
+#'           cl = sample(letters[1:5], 20, replace=TRUE))
+#' ggplot(df, aes(x, y, colour=cl, shape=cl)) + 
+#'   geom_point(size=4) + scale_colour_ochre() +
+#'   theme(aspect.ratio=1)
 #' 
 #' # Make a histogram using the McCrea Collins Street palette
 #' df <- df<- data.frame(x = rnorm(500, 0, 20))
