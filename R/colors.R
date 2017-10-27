@@ -216,5 +216,28 @@ ochre_palettes <- list(
      "#f0a800",
      "#484878",
      "#a8c018",
-     "#609048"
+     "#609048"),
+ 
+ ## Bleached great barrier reef
+ ## http://cdn.newsapi.com.au/image/v1/7c2f433cd1e020a6ad1b7018070c55a6
+ dead_reef = c(
+     "#D2E1DE",
+     "#548495",
+     "#3C4347",
+     "#758388",
+     "#DBE9E2",
+     "#8E9796"
+ ),
+ 
+ ## Jumping Frog (John Olsen, 1982)
+ ## http://cdn.artserieshotels.com.au/images/made/images/remote/http_cdn.artserieshotels.com.au/images/uploads/main/john-olsen-artist-artwork1_600_400_60.jpg
+ jumping_frog = c(
+     "#607848",
+     "#184848",
+     "#c0c030",
+     "#a8a890",
+     "#90a878"
  ))
+
+
+
