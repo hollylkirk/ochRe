@@ -23,5 +23,6 @@ Suggests: knitr,
     scales,
     tidyverse,
     elevatr,
-    raster
+    raster,
+    gridExtra
 VignetteBuilder: knitr
