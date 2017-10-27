@@ -10,10 +10,11 @@ vignette: >
 ---
 
 ```{r setup, echo = FALSE, message = FALSE}
-knitr::opts_chunk$set(fig.width = 7)
+knitr::opts_chunk$set(fig.width = 7, echo = FALSE)
 library(ochRe)
 library(dichromat)
 library(colorspace)
+
 ```
 
 # Introduction
@@ -46,7 +47,7 @@ Healthy_reef                Emu_woman_paired
 Usage
 -----
 
-```{r use_names}
+```{r use_names, echo=TRUE}
 
 # See names of all palettes
 names(ochre_palettes)
@@ -63,11 +64,10 @@ for (i in 1:length(ochre_palettes)){
 
 
 ## Colour blindness check
-These plots show how each of the palettes perform for different types of colour blind, using dichromat.
-
+These plots show how each of the palettes perform for different types of colour blind, using dichromat. Recommended palettes are galah, namatjira, williams pilbara, and healthy reef  
 
 ### Green-Blind (Deuteranopia)
-```{r dichromate_deat}
+```{r dichromate_deat, fig.height = 8}
 par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
 for (i in 1:length(ochre_palettes)){
     viz_palette(dichromat(ochre_palettes[[i]], "deutan"), pal_names[i])
@@ -76,7 +76,7 @@ for (i in 1:length(ochre_palettes)){
 
 
 ### Red-Blind (Protanopia)
-```{r dichromate_protan}
+```{r dichromate_protan, fig.height = 8}
 par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
 for (i in 1:length(ochre_palettes)){
     viz_palette(dichromat(ochre_palettes[[i]], "protan"), pal_names[i])
@@ -85,7 +85,7 @@ for (i in 1:length(ochre_palettes)){
 
 
 ### Blue-Blind (Tritanopia)
-```{r dichromate_tritan}
+```{r dichromate_tritan, fig.height = 8}
 par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
 for (i in 1:length(ochre_palettes)){
     viz_palette(dichromat(ochre_palettes[[i]], "tritan"), pal_names[i])
@@ -94,7 +94,7 @@ for (i in 1:length(ochre_palettes)){
 
 
 ### Desaturated
-```{r desaturate}
+```{r desaturate, fig.height = 8}
 par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
 for (i in 1:length(ochre_palettes)){
     viz_palette(desaturate(ochre_palettes[[i]]), pal_names[i])
@@ -106,16 +106,15 @@ for (i in 1:length(ochre_palettes)){
 This palette is based on the painting "Twin Ghosts"" by Albert Namatjira.
 It has eight colours.  
 
-![alt text](http://www.menziesartbrands.com/sites/default/files/field/catalogue_items//DM_24017.jpg)
+![alt text](http://www.menziesartbrands.com/sites/default/files/field/catalogue_items//DM_24017.jpg){width=50%}
 
 
-### mccrea_melbcollinsst_1841
+### mccrea
 
 This palette is based on the painting "Melbourne, Collins St, 1841" by Georgiana McCrae. 
 It has eleven colours.   
 
-![mccrea_melbcollinsst_1841](https://upload.wikimedia.org/wikipedia/commons/c/c0/Melbourne_Collins_Street_1841.jpg)
-
+![mccrea](https://upload.wikimedia.org/wikipedia/commons/c/c0/Melbourne_Collins_Street_1841.jpg){width=50%}
 
 ### parliament
 
