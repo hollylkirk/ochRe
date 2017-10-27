@@ -10,12 +10,19 @@ vignette: >
 ---
 
 ```{r setup, echo = FALSE, message = FALSE}
-knitr::opts_chunk$set(fig.width = 7, echo = FALSE)
+knitr::opts_chunk$set(fig.width = 7, 
+                      echo = FALSE, 
+                      warning = FALSE, 
+                      message=FALSE)
+```
+
+```{r}
 library(tidyverse)
 library(ochRe)
 library(dichromat)
 library(colorspace)
 library(elevatr)
+library(raster)
 library(gridExtra)
 ```
 
@@ -128,9 +135,8 @@ Here the default palette `namatjira_qual` is used in a stacked bar chart using t
 The following shows elevation in Australia with each of the palettes.
 
 ```{r maps, echo=TRUE, message=FALSE, fig.height=8}
-load("../data/oz_elev.rda")
-library(elevatr)
-library(raster)
+#load("../data/oz_elev.rda")
+data(elev)
 par(mfrow=c(6, 3))
 for (curCol in ochre_palettes%>%names()){
     colpal <- ochre_pal(palette = curCol)(150)
