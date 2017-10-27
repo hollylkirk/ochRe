@@ -97,7 +97,7 @@ for (i in 1:length(ochre_palettes)){
 
 The ochRe functions `scale_colour_ochre` and `scale_fill_ochre` are designed to be used with ggplot2. 
 
-```{r eg2}
+```{r eg2, echo = TRUE}
 library(tidyverse)
 
 ggplot(mtcars, aes(mpg, wt)) + 
