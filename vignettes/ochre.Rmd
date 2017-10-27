@@ -11,10 +11,12 @@ vignette: >
 
 ```{r setup, echo = FALSE, message = FALSE}
 knitr::opts_chunk$set(fig.width = 7, echo = FALSE)
+library(tidyverse)
 library(ochRe)
 library(dichromat)
 library(colorspace)
 library(elevatr)
+library(gridExtra)
 ```
 
 # Introduction
@@ -100,28 +102,26 @@ for (i in 1:length(ochre_palettes)){
 The ochRe package contains color scale functions for **ggplot**
 plots: `scale_color_ochre()` and `scale_fill_ochre()`. 
 
-Here the `olsen_qual` is used for a scatter plot of `mtcars` data.
+Here the `olsen_qual` and `winmar` palettes are used for a scatter plot of `mtcars` data.
 
 ```{r mtcars, echo = TRUE, message = FALSE}
-library(tidyverse)
-
-ggplot(mtcars, aes(mpg, wt)) + 
-   geom_point(aes(colour = factor(cyl))) + 
-   scale_colour_ochre(palette="olsen_qual")
-```
-
-This code uses the `winmar` palette is used for a scatter plot of `mpg` data
-
-```{r mpg, echo = TRUE, message = FALSE}
-ggplot(data = mpg) + 
-   geom_point(mapping = aes(x = displ, y = hwy, color = class)) +
-   scale_colour_ochre(palette="winmar")
+p1 <- ggplot(mtcars, aes(mpg, wt)) + 
+   geom_point(aes(colour = factor(cyl)), size=2, alpha=0.7) + 
+   scale_colour_ochre(palette="olsen_qual") +
+    theme_bw() + 
+    theme(aspect.ratio=1, legend.position="bottom")
+p2 <- ggplot(data = mpg) + 
+   geom_point(mapping = aes(x = displ, y = hwy, color = class), alpha=0.7) +
+   scale_colour_ochre(palette="winmar") +
+    theme_bw() + 
+    theme(aspect.ratio=1, legend.position="bottom")
+grid.arrange(p1, p2, ncol=2)
 ```
 
 Here the default palette `namatjira_qual` is used in a stacked bar chart using the `diamonds` data. 
 ```{r diamonds, echo=TRUE, message=FALSE}
  ggplot(diamonds) + geom_bar(aes(x = cut, fill = clarity)) +
-   scale_fill_ochre()
+   scale_fill_ochre() +  theme_bw() 
 
 ```
 
