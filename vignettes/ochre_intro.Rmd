@@ -1,6 +1,6 @@
 ---
 title: "ochre_intro"
-author: "Holly Kirk"
+author: "PARDaHlotE"
 date: "26 October 2017"
 output: rmarkdown::html_vignette
 vignette: >
@@ -25,13 +25,13 @@ The [**ochre**](CRAN link?) package contains colour palettes inspired by the Aus
 # Installation
 
 ``` r
-install.packages("ochre")
+install.packages("ochRe")
 ```
 
 **Or the development version**
 
 ``` r
-devtools::install_github("ropenscilabs/ochre")
+devtools::install_github("ropenscilabs/ochRe")
 ```
 
 # ochRe palette choices
@@ -48,7 +48,7 @@ names(ochre_palettes)
 ```{r see_palettes, fig.height = 8}
 pal_names <- names(ochre_palettes)
 
-par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
+par(mfrow=c(length(ochre_palettes)/2, 2), lheight = 2, mar=rep(1, 4), adj = 0)
 for (i in 1:length(ochre_palettes)){
     viz_palette(ochre_palettes[[i]], pal_names[i])
 }
@@ -60,7 +60,7 @@ These plots show how each of the palettes perform for different types of colour 
 
 ### Green-Blind (Deuteranopia)
 ```{r dichromate_deat, fig.height = 5}
-par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
+par(mfrow=c(length(ochre_palettes)/2, 2), lheight = 2, mar=rep(1, 4), adj = 0)
 for (i in 1:length(ochre_palettes)){
     viz_palette(dichromat(ochre_palettes[[i]], "deutan"), pal_names[i])
 }
@@ -69,7 +69,7 @@ for (i in 1:length(ochre_palettes)){
 
 ### Red-Blind (Protanopia)
 ```{r dichromate_protan, fig.height = 5}
-par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
+par(mfrow=c(length(ochre_palettes)/2, 2), lheight = 2, mar=rep(1, 4), adj = 0)
 for (i in 1:length(ochre_palettes)){
     viz_palette(dichromat(ochre_palettes[[i]], "protan"), pal_names[i])
 }
@@ -78,7 +78,7 @@ for (i in 1:length(ochre_palettes)){
 
 ### Blue-Blind (Tritanopia)
 ```{r dichromate_tritan, fig.height = 5}
-par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
+par(mfrow=c(length(ochre_palettes)/2, 2), lheight = 2, mar=rep(1, 4), adj = 0)
 for (i in 1:length(ochre_palettes)){
     viz_palette(dichromat(ochre_palettes[[i]], "tritan"), pal_names[i])
 }
@@ -87,7 +87,7 @@ for (i in 1:length(ochre_palettes)){
 
 ### Desaturated
 ```{r desaturate, fig.height = 5}
-par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
+par(mfrow=c(length(ochre_palettes)/2, 2), lheight = 2, mar=rep(1, 4), adj = 0)
 for (i in 1:length(ochre_palettes)){
     viz_palette(desaturate(ochre_palettes[[i]]), pal_names[i])
 }
@@ -95,19 +95,29 @@ for (i in 1:length(ochre_palettes)){
 
 # Usage
 
-The ochRe functions `scale_colour_ochre` and `scale_fill_ochre` are designed to be used with ggplot2. 
+The ochRe package contains color scale functions for **ggplot**
+plots: `scale_color_ochre()` and `scale_fill_ochre()`. 
 
-```{r eg2, echo = TRUE, message = FALSE}
+Here the `olsen_qual` is used for a scatter plot of `mtcars` data.
+
+```{r mtcars, echo = TRUE, message = FALSE}
 library(tidyverse)
 
 ggplot(mtcars, aes(mpg, wt)) + 
    geom_point(aes(colour = factor(cyl))) + 
    scale_colour_ochre(palette="olsen_qual")
+```
 
+This code uses the `winmar` palette is used for a scatter plot of `mpg` data
+
+```{r mpg, echo = TRUE, message = FALSE}
 ggplot(data = mpg) + 
    geom_point(mapping = aes(x = displ, y = hwy, color = class)) +
    scale_colour_ochre(palette="winmar")
+```
 
+Here the default palette `namatjira_qual` is used in a stacked bar chart using the `diamonds` data. 
+```{r diamonds, echo=TRUE, message=FALSE}
  ggplot(diamonds) + geom_bar(aes(x = cut, fill = clarity)) +
    scale_fill_ochre()
 
@@ -115,10 +125,7 @@ ggplot(data = mpg) +
 
 
 ```{r map}
-library(scales)
-show_col(ochre_pal()(10))
-# insert nice map from Michael
-#filled.contour(volcano,color.palette = ochre_pal(256), asp=1)
+
 
 ```
 
