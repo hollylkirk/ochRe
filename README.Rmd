@@ -3,16 +3,27 @@ output:
   html_document: 
     keep_md: yes
 ---
-# Australia-themed Color Palettes
 
-The goal of `ochRe` is to provide color palettes inspired by Australian themes. The palettes can be used in conjunction with `ggplot2` or `plot` to provide colors to data plots.
+# Australia-themed Colour Palettes
+
+Ochre is a brownish-yellow pigment that occurs naturally in soils across Australia. Historically, ochre has been used for artwork by many indigenous cultures, including the Aboriginal people of Australia.
+
+The goal of `ochRe` is to provide colour palettes inspired by Australian art, landscapes and wildlife. The palettes can be used in conjunction with `ggplot2` or `plot` to provide colours to data plots.
+There are 14 different palettes (at the moment!), each one based on an iconic Australian artwork, landscape or creature.
+Some palettes are more suitable for displaying qualitative data, others will look fabulous used in sequential plots.
+More information can be found in the vignette, including which palettes work best for those with impaired colour vision.
+
+```r
+# load the ochRe vignette
+vignette("ochRe_intro")
+```
 
 ## Installation
 
 You can install `ochRe` from github with:
 
-``` r
-# install.packages("devtools")
+```r
+# You need to install the 'devtools' package first
 devtools::install_github("ropenscilabs/ochRe")
 ```
 
@@ -27,11 +38,12 @@ pal <- colorRampPalette(ochre_palettes[["winmar"]])
 image(volcano, col = pal(10))
 ```
 
-Individual palettes can be vizualized.
+Individual palettes can be visualised using the viz_palette function
 ```{r}
 viz_palette(ochre_palettes[["tasmania"]], "tasmania")
 ```
 
+You can set the visualisation to interpolate between the colours of a palette
 ```{r}
 viz_palette(ochre_palettes[["tasmania"]], "tasmania", 100)
 ```
