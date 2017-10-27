@@ -19,6 +19,8 @@ scale_colour_ochre(..., palette = "namatjira_qual", discrete = TRUE,
 \item{discrete}{generate a discrete palette? (default: \code{FALSE} - generate continuous palette)}
 
 \item{alpha}{pass through parameter to \code{viridis}}
+
+\item{reverse}{logical, Reverse the order of the colours?}
 }
 \description{
 Setup colour palette for ggplot2

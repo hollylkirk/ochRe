@@ -18,7 +18,7 @@
 #'   scale_fill_ochre(palette="mccrea")
 #'
 #' \dontrun{
-#'   load("data/oz_elev.rda")
+#'   data(elev)
 #'   library(elevatr)
 #'   library(raster)
 #'   library(ochRe)
