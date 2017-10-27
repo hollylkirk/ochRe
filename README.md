@@ -1,4 +1,6 @@
 
+
+
 # Australia-themed Colour Palettes
 
 Ochre is a brownish-yellow pigment that occurs naturally in soils across Australia. Historically, ochre has been used for artwork by many indigenous cultures, including the Aboriginal people of Australia.
@@ -34,7 +36,7 @@ ggplot(diamonds) + geom_bar(aes(x = cut, fill = clarity)) +
   scale_fill_ochre()
 ```
 
-![](README_files/figure-html/unnamed-chunk-1-1.png)<!-- -->
+![](README_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
 
 In this example we use the `winmar` palette directly via the `colorRampPalette()` function (for the base plot connoisseurs). 
 
@@ -45,7 +47,7 @@ pal <- colorRampPalette(ochre_palettes[["winmar"]])
 image(volcano, col = pal(20))
 ```
 
-![](README_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](README_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
 Individual palettes can be visualised using the viz_palette function
 
@@ -53,5 +55,5 @@ Individual palettes can be visualised using the viz_palette function
 viz_palette(ochre_palettes[["tasmania"]])
 ```
 
-![](README_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](README_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
