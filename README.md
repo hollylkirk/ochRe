@@ -12,7 +12,7 @@ More information can be found in the vignette, including which palettes work bes
 
 ```r
 # load the ochRe vignette
-vignette("ochre_intro")
+vignette("ochre")
 ```
 
 ## Installation
