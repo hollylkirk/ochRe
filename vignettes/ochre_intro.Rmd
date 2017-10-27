@@ -96,6 +96,9 @@ for (i in 1:length(ochre_palettes)){
 }
 ```
 
+
+## Palette inspiration
+
 ### namatjira_qual and namatjira_div
 
 These palettes are based on the painting "Twin Ghosts"" by Albert Namatjira. Each palette has eight colours.
@@ -115,7 +118,7 @@ It has eleven colours.
 This palette is based on based on the tapestry in the Great Hall of Parliament House, of a landscape by Arthur Boyd - Untitled (Shoalhaven Landscape), as well as the colours of the and House of Representatives and the Senate. 
 It has eight colours.   
 
-![Untitled (Shoalhaven Landscape)](https://www.aph.gov.au/~/media/06%20Visit%20Parliament/66%20Parl%20House%20Art%20Collection/661%20five%20treasures/five%20treasures%20detail%20pics/M19840057UntitledBOYDunframed.png?la=en){width=50%}  
+![Untitled (Shoalhaven Landscape)](https://www.aph.gov.au/~/media/06%20Visit%20Parliament/66%20Parl%20House%20Art%20Collection/661%20five%20treasures/five%20treasures%20detail%20pics/M19840057UntitledBOYDunframed.png?la=en){width=80%}  
   
 Parliament House:
 https://www.peo.gov.au/learning/closer-look/australias-parliament-house/a-place-for-the-parliament.html  
@@ -128,5 +131,43 @@ It has seven colours.
 This palette is based on the painting "Ned Kelly", 1946, by Sidney Nolan.
 It has five colours.
 
-
 ![Ned Kelly](https://cs.nga.gov.au/images/lrg/28926.jpg){width=50%}
+
+### winmar
+This palette is based on a photograph by Wayne Ludbey, "Nicky Winmar St Kilda Footballer", 1993. It has seven colours.
+
+![Nicky Winmar](https://nga.gov.au/federation/Large/27707.jpg){width=40%}
+
+### olsen_qual and olsen_div
+These palettes are based on the painting "Sydney Sun", 1965, by John Olsen. 1993. olsen_qual has six colours, olsen_div has 14 colours.
+
+![Sydney Sun](https://artsearch.nga.gov.au/images/lrg/26102.jpg){width=50%}  
+
+
+### williams_pilbara
+This palette is based on the painting "Mount Nameless (morning)"", 1981, by Fred Williams. The palette has seven colours. 
+
+![Mount Nameless (morning)](http://www.art-almanac.com.au/wp-content/uploads/2013/11/benalla_mt_nameless_review_1213.jpg){width=50%}
+
+
+### healthy_reef
+This palette is based on colours of the great barrier reef. The palette has nine colours. 
+
+![Gread Barrier Reef](http://aussiedestinationtours.com/wp-content/uploads/2014/07/Greatbarrierreef.jpg){width=50%}  
+
+### emu_woman_paired
+This palette is based on the painting "Emu Woman", 1988–89 by Emily Kame Kngwarreye, The palette has eighteen colours. 
+
+![Emu Woman](http://www.nma.gov.au/__data/assets/image/0003/225939/88_Emu_Woman_w480.jpg){width=50%}  
+
+### galah
+This palette is based on the colours of the galah. It has five colours.  
+
+![Galah](https://images.theconversation.com/files/138409/original/image-20160920-18705-aaufc.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&fit=clip){width=50%}  
+
+### lorikeet
+This palette is based on the colours of the rainbow lorikeet. It has six colours.  
+
+![Lorikeet](http://reptilepark.com.au/wp-content/uploads/2015/11/birds_rainbow_lorikeet2.jpg){width=50%} 
+
+
