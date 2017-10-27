@@ -29,21 +29,25 @@ devtools::install_github("ropenscilabs/ochRe")
 
 ## Example
 
-This is a basic example of how to use `ochRe` in a plot
+This is a basic example of how to use the `namatjira_qual` palette in a plot.
+
+```{r}
+library(ochRe)
+library(ggplot2)
+ggplot(diamonds) + geom_bar(aes(x = cut, fill = clarity)) +
+  scale_fill_ochre()
+```
+
+In this example we use the `winmar` palette directly via the `colorRampPalette()` function (for the base plot connoisseurs). 
 
 ```{r}
 ## basic example code
-library(ochRe)
 pal <- colorRampPalette(ochre_palettes[["winmar"]])
-image(volcano, col = pal(10))
+image(volcano, col = pal(20))
 ```
 
 Individual palettes can be visualised using the viz_palette function
 ```{r}
-viz_palette(ochre_palettes[["tasmania"]], "tasmania")
+viz_palette(ochre_palettes[["tasmania"]])
 ```
 
-You can set the visualisation to interpolate between the colours of a palette
-```{r}
-viz_palette(ochre_palettes[["tasmania"]], "tasmania", 100)
-```
