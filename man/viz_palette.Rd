@@ -4,7 +4,7 @@
 \alias{viz_palette}
 \title{Show a single palette}
 \usage{
-viz_palette(pal, ttl = "", num = length(pal))
+viz_palette(pal, ttl = deparse(substitute(pal)), num = length(pal))
 }
 \arguments{
 \item{pal}{character, vector of (hexadecimal) colours representing a palette}
@@ -26,7 +26,7 @@ over the vector of colours in the chosen palette.
 \examples{
 viz_palette(ochre_palettes$namatjira_qual)
 viz_palette(ochre_palettes$namatjira_qual, "namatjira_qual")
-viz_palette(ochre_palettes$namatjira_qual, "namatjira_qual first 4", 4)
-viz_palette(ochre_palettes$namatjira_qual, "namatjira_qual interpolated to 25", 25)
+viz_palette(ochre_palettes$namatjira_qual, "namatjira_qual first 4", num = 4)
+viz_palette(ochre_palettes$namatjira_qual, "namatjira_qual interpolated to 25", num = 25)
 
 }
