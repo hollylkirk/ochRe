@@ -62,7 +62,7 @@ for (i in 1:length(ochre_palettes)){
 These plots show how each of the palettes perform for different types of colour blind, using dichromat. Recommended palettes are galah, namatjira, williams pilbara, and healthy reef  
 
 ### Green-Blind (Deuteranopia)
-```{r dichromate_deat, fig.height = 8}
+```{r dichromate_deat, fig.height = 5}
 par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
 for (i in 1:length(ochre_palettes)){
     viz_palette(dichromat(ochre_palettes[[i]], "deutan"), pal_names[i])
@@ -71,7 +71,7 @@ for (i in 1:length(ochre_palettes)){
 
 
 ### Red-Blind (Protanopia)
-```{r dichromate_protan, fig.height = 8}
+```{r dichromate_protan, fig.height = 5}
 par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
 for (i in 1:length(ochre_palettes)){
     viz_palette(dichromat(ochre_palettes[[i]], "protan"), pal_names[i])
@@ -80,7 +80,7 @@ for (i in 1:length(ochre_palettes)){
 
 
 ### Blue-Blind (Tritanopia)
-```{r dichromate_tritan, fig.height = 8}
+```{r dichromate_tritan, fig.height = 5}
 par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
 for (i in 1:length(ochre_palettes)){
     viz_palette(dichromat(ochre_palettes[[i]], "tritan"), pal_names[i])
@@ -89,7 +89,7 @@ for (i in 1:length(ochre_palettes)){
 
 
 ### Desaturated
-```{r desaturate, fig.height = 8}
+```{r desaturate, fig.height = 5}
 par(mfrow=c(7, 2), lheight = 2, mar=rep(1, 4), adj = 0)
 for (i in 1:length(ochre_palettes)){
     viz_palette(desaturate(ochre_palettes[[i]]), pal_names[i])
@@ -101,21 +101,21 @@ for (i in 1:length(ochre_palettes)){
 
 ### namatjira_qual and namatjira_div
 
-These palettes are based on the painting "Twin Ghosts"" by Albert Namatjira. Each palette has eight colours.
+These palettes are based on the painting "Twin Ghosts",  by Albert Namatjira. Each palette has eight colours.
 
-![alt text](http://www.menziesartbrands.com/sites/default/files/field/catalogue_items//DM_24017.jpg){width=50%}
+![Twin Ghosts](http://www.menziesartbrands.com/sites/default/files/field/catalogue_items//DM_24017.jpg){width=50%}
 
 
 ### mccrea
 
-This palette is based on the painting "Melbourne, Collins St, 1841" by Georgiana McCrae. 
+This palette is based on the painting "Melbourne, Collins St", 1841, by Georgiana McCrae. 
 It has eleven colours.   
 
-![mccrea](https://upload.wikimedia.org/wikipedia/commons/c/c0/Melbourne_Collins_Street_1841.jpg){width=50%}
+![Melbourne](https://upload.wikimedia.org/wikipedia/commons/c/c0/Melbourne_Collins_Street_1841.jpg){width=50%}
 
 ### parliament
 
-This palette is based on based on the tapestry in the Great Hall of Parliament House, of a landscape by Arthur Boyd - Untitled (Shoalhaven Landscape), as well as the colours of the and House of Representatives and the Senate. 
+This palette is based on based on the tapestry in the Great Hall of Parliament House, of a landscape by Arthur Boyd - Untitled (Shoalhaven Landscape), 1984, as well as the colours of the and House of Representatives and the Senate. 
 It has eight colours.   
 
 ![Untitled (Shoalhaven Landscape)](https://www.aph.gov.au/~/media/06%20Visit%20Parliament/66%20Parl%20House%20Art%20Collection/661%20five%20treasures/five%20treasures%20detail%20pics/M19840057UntitledBOYDunframed.png?la=en){width=80%}  
@@ -139,13 +139,13 @@ This palette is based on a photograph by Wayne Ludbey, "Nicky Winmar St Kilda Fo
 ![Nicky Winmar](https://nga.gov.au/federation/Large/27707.jpg){width=40%}
 
 ### olsen_qual and olsen_div
-These palettes are based on the painting "Sydney Sun", 1965, by John Olsen. 1993. olsen_qual has six colours, olsen_div has 14 colours.
+These palettes are based on the painting "Sydney Sun", 1965, by John Olsen. olsen_qual has six colours, olsen_div has 14 colours.
 
 ![Sydney Sun](https://artsearch.nga.gov.au/images/lrg/26102.jpg){width=50%}  
 
 
 ### williams_pilbara
-This palette is based on the painting "Mount Nameless (morning)"", 1981, by Fred Williams. The palette has seven colours. 
+This palette is based on the painting "Mount Nameless (morning)", 1981, by Fred Williams. The palette has seven colours. 
 
 ![Mount Nameless (morning)](http://www.art-almanac.com.au/wp-content/uploads/2013/11/benalla_mt_nameless_review_1213.jpg){width=50%}
 
@@ -156,7 +156,7 @@ This palette is based on colours of the great barrier reef. The palette has nine
 ![Gread Barrier Reef](http://aussiedestinationtours.com/wp-content/uploads/2014/07/Greatbarrierreef.jpg){width=50%}  
 
 ### emu_woman_paired
-This palette is based on the painting "Emu Woman", 1988–89 by Emily Kame Kngwarreye, The palette has eighteen colours. 
+This palette is based on the painting "Emu Woman", 1988–89, by Emily Kame Kngwarreye, The palette has eighteen colours. 
 
 ![Emu Woman](http://www.nma.gov.au/__data/assets/image/0003/225939/88_Emu_Woman_w480.jpg){width=50%}  
 
