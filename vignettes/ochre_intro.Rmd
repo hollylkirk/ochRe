@@ -59,7 +59,7 @@ for (i in 1:length(ochre_palettes)){
 
 
 ## Colour blindness check
-These plots show how each of the palettes perform for different types of colour blind, using dichromat. Recommended palettes are galah, namatjira, williams pilbara, and healthy reef  
+These plots show how each of the palettes perform for different types of colour blindness (using dichromat). Palettes that perform best for colour blindness are "galah", "namatjira", "williams_pilbara", and "healthy_ _reef"  
 
 ### Green-Blind (Deuteranopia)
 ```{r dichromate_deat, fig.height = 5}
