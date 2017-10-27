@@ -113,10 +113,12 @@ ggplot(data = mpg) +
 
 ```
 
-```{r eg1}
+
+```{r map}
 library(scales)
 show_col(ochre_pal()(10))
-filled.contour(volcano,color.palette = ochre_pal(256), asp=1)
+# insert nice map from Michael
+#filled.contour(volcano,color.palette = ochre_pal(256), asp=1)
 
 ```
 
