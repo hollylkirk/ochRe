@@ -27,6 +27,8 @@ ochre_pal <- function(palette="namatjira_qual", alpha = 1, reverse = FALSE) {
 #'
 #' @param palette Choose from 'ochre_palettes' list
 #' 
+#' @param reverse logical, Reverse the order of the colours?
+#' 
 #' @inheritParams viridis::scale_color_viridis
 #'
 #' @importFrom ggplot2 scale_colour_manual
