@@ -14,7 +14,6 @@ knitr::opts_chunk$set(fig.width = 7, echo = FALSE)
 library(ochRe)
 library(dichromat)
 library(colorspace)
-
 ```
 
 # Introduction
@@ -35,12 +34,10 @@ install.packages("ochre")
 devtools::install_github("ropenscilabs/ochre")
 ```
 
-# The Palettes
+# ochRe palette choices
 
 The package contains fourteen colour palettes.
 
-Usage
------
 
 ```{r use_names, echo=TRUE}
 
@@ -96,6 +93,32 @@ for (i in 1:length(ochre_palettes)){
 }
 ```
 
+# Usage
+
+The ochRe functions `scale_colour_ochre` and `scale_fill_ochre` are designed to be used with ggplot2. 
+
+```{r eg2}
+library(tidyverse)
+
+ggplot(mtcars, aes(mpg, wt)) + 
+   geom_point(aes(colour = factor(cyl))) +     
+   scale_colour_ochre(palette="olsen_qual")
+
+ggplot(data = mpg) + 
+   geom_point(mapping = aes(x = displ, y = hwy, color = class)) +
+   scale_colour_ochre(palette="winmar")
+
+ ggplot(diamonds) + geom_bar(aes(x = cut, fill = clarity)) +
+   scale_fill_ochre()
+
+```
+
+```{r eg1}
+library(scales)
+show_col(ochre_pal()(10))
+filled.contour(volcano,color.palette = ochre_pal(256), asp=1)
+
+```
 
 ## Palette inspiration
 
