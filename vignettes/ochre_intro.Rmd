@@ -124,9 +124,26 @@ Here the default palette `namatjira_qual` is used in a stacked bar chart using t
 ```
 
 
-```{r map}
+```{r maps, echo=TRUE, message=FALSE, fig.height=8}
+load("../data/oz_elev.rda")
+library(elevatr)
+library(raster)
+par(mfrow=c(5, 3))
+for (curCol in ochre_palettes%>%names()){
+    colpal <- ochre_pal(palette = curCol)(150)
+    ex <- extent(110, 155, -45, -10)
+    elev <- raster::crop(elev, ex)
+    elev[elev < 0] <- NA
+    topo <- list(x = xFromCol(elev), y = rev(yFromRow(elev)), 
+                    z = t(as.matrix(elev))[, nrow(elev):1])
+                     par(mar = rep(0, 4), bg = "#444444")
+    image(topo, useRaster = TRUE, col = colpal,
+       axes = FALSE, xlab = "", ylab = "",
+             asp = cos(27.5 * pi/180))
 
-
+}
+                 
+par(mfrow=c(1,1))
 ```
 
 ## Palette inspiration
