@@ -10,8 +10,6 @@ ochre_pal(palette = "namatjira_qual", alpha = 1)
 \item{palette}{Choose from 'ochre_palettes' list}
 
 \item{alpha}{transparency}
-
-\item{n}{number of colours when using the ramp}
 }
 \description{
 ochre palette with ramped colours
@@ -20,6 +18,6 @@ ochre palette with ramped colours
 library(scales)
 show_col(ochre_pal()(10))
 
-filled.contour(volcano,color.palette = ochre_pal(256), asp=1)
+filled.contour(volcano,color.palette = ochre_pal(), asp=1)
 
 }

@@ -2,19 +2,29 @@
 % Please edit documentation in R/scales.R
 \name{scale_color_ochre}
 \alias{scale_color_ochre}
+\alias{scale_colour_ochre}
 \title{Setup colour palette for ggplot2}
 \usage{
 scale_color_ochre(..., palette = "namatjira_qual", discrete = TRUE,
   alpha = 1)
+
+scale_colour_ochre(..., palette = "namatjira_qual", discrete = TRUE,
+  alpha = 1)
 }
 \arguments{
+\item{...}{parameters to \code{discrete_scale} or \code{scale_fill_gradientn}}
+
 \item{palette}{Choose from 'ochre_palettes' list}
+
+\item{discrete}{generate a discrete palette? (default: \code{FALSE} - generate continuous palette)}
+
+\item{alpha}{pass through parameter to \code{viridis}}
 }
 \description{
 Setup colour palette for ggplot2
 }
 \examples{
-library(tidyverse)
+library(ggplot2)
 ggplot(mtcars, aes(mpg, wt)) + 
   geom_point(aes(colour = factor(cyl))) +     
   scale_colour_ochre(palette="olsen_qual")

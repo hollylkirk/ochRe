@@ -1,7 +1,5 @@
 #' ochre palette with ramped colours
 #'
-#' @param n number of colours when using the ramp
-#'
 #' @param palette Choose from 'ochre_palettes' list
 #'
 #' @param alpha transparency
@@ -11,7 +9,7 @@
 #' library(scales)
 #' show_col(ochre_pal()(10))
 #'
-#' filled.contour(volcano,color.palette = ochre_pal(256), asp=1)
+#' filled.contour(volcano,color.palette = ochre_pal(), asp=1)
 #' 
 #' @export
 ochre_pal <- function(palette="namatjira_qual", alpha = 1) {
@@ -20,13 +18,17 @@ ochre_pal <- function(palette="namatjira_qual", alpha = 1) {
 }
 
 #' Setup colour palette for ggplot2
+#' 
+#' @rdname scale_color_ochre
 #'
 #' @param palette Choose from 'ochre_palettes' list
+#' 
+#' @inheritParams viridis::scale_color_viridis
 #'
 #' @importFrom ggplot2 scale_colour_manual
 #'
 #' @examples 
-#' library(tidyverse)
+#' library(ggplot2)
 #' ggplot(mtcars, aes(mpg, wt)) + 
 #'   geom_point(aes(colour = factor(cyl))) +     
 #'   scale_colour_ochre(palette="olsen_qual")
@@ -39,6 +41,8 @@ ochre_pal <- function(palette="namatjira_qual", alpha = 1) {
 #' ggplot(diamonds) + geom_bar(aes(x = cut, fill = clarity)) +
 #'   scale_fill_ochre()
 #' @export
+#' 
+#' @importFrom ggplot2 discrete_scale scale_color_gradientn
 scale_color_ochre <- function(..., palette="namatjira_qual", 
                               discrete = TRUE, alpha = 1) {
    if (discrete) {
@@ -49,15 +53,17 @@ scale_color_ochre <- function(..., palette="namatjira_qual",
     #scale_colour_manual(values=ochre_palettes[[palette]])
 }
 
-#' @aliases scale_color_ochre
+#' @rdname scale_color_ochre
 #' @export
 scale_colour_ochre <- scale_color_ochre
 
 #' #' Setup fill palette for ggplot2
 #'
 #' @param palette Choose from 'ochre_palettes' list
+#' 
+#' @inheritParams viridis::scale_fill_viridis
 #'
-#' @importFrom ggplot2 scale_fill_manual
+#' @importFrom ggplot2 scale_fill_manual discrete_scale scale_fill_gradientn
 #'
 #' @export
 scale_fill_ochre <- function(..., palette="namatjira_qual", 
