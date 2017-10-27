@@ -24,6 +24,21 @@ You can install `ochRe` from github with:
 devtools::install_github("ropenscilabs/ochRe")
 ```
 
+## The Palettes
+
+
+```r
+pal_names <- names(ochre_palettes)
+
+par(mfrow=c(length(ochre_palettes)/2, 2), lheight = 2, mar=rep(1, 4), adj = 0)
+for (i in 1:length(ochre_palettes)){
+    viz_palette(ochre_palettes[[i]], pal_names[i])
+}
+```
+
+![](README_files/figure-html/see_palettes-1.png)<!-- -->
+
+
 ## Example
 
 This is a basic example of how to use the `namatjira_qual` palette in a plot.
