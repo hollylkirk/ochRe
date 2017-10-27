@@ -14,12 +14,33 @@ A collection of colour palettes inspired by the landscape and wildlife of Austra
 \examples{
 
 # Make an x-y plot using the Namatjira palette
-df <- df<- data.frame(x = rnorm(20, 0, 20), y = rnorm(20, 0, 20))
-plot(df, col = ochre_palettes$namatjira_qual, pch = 19)
+library(tidyverse)
+df <- data.frame(x = rnorm(100, 0, 20), 
+          y = rnorm(100, 0, 20), 
+          cl = sample(letters[1:8], 100, replace=TRUE))
+ggplot(df, aes(x, y, colour=cl, shape=cl)) + 
+  geom_point(size=4) + scale_colour_ochre() +
+  theme_bw() + theme(aspect.ratio=1) 
 
 # Make a histogram using the McCrea Collins Street palette
-df <- df<- data.frame(x = rnorm(500, 0, 20))
-hist(df$x, col = ochre_palettes$olsen_div, breaks = 14)
+ggplot(df, aes(x, fill=cl)) + geom_histogram() +
+  scale_fill_ochre(palette="mccrea")
 
+\dontrun{
+  load("data/oz_elev.rda")
+  library(elevatr)
+  library(raster)
+  library(ochRe)
+  colpal <- ochre_pal()(150)
+  ex <- extent(110, 155, -45, -10)
+  elev <- raster::crop(elev, ex)
+  elev[elev < 0] <- NA
+  topo <- list(x = xFromCol(elev), y = rev(yFromRow(elev)), 
+               z = t(as.matrix(elev))[, nrow(elev):1])
+               par(mar = rep(0, 4), bg = "#444444")
+               image(topo, useRaster = TRUE, col = colpal,
+                     axes = FALSE, xlab = "", ylab = "",
+                           asp = cos(27.5 * pi/180))
+}
 }
 \keyword{datasets}
