@@ -1,12 +1,10 @@
-#' ochre palette (discrete)
-#'
-#' ochre palette (discrete)
+#' ochre palette with ramped colours
 #'
 #' @param n number of colours when using the ramp
 #'
-#' @param palette 
+#' @param palette Choose from 'ochre_palettes' list
 #'
-#' @param alpha transpreancy
+#' @param alpha transparency
 #'
 #'
 #' @examples
@@ -21,11 +19,14 @@ ochre_pal <- function(n, palette="namatjira_qual", alpha = 1) {
     return(colorRampPalette(pal, alpha))
 }
 
-#' @rdname scale_color_ochre
+#' Setup colour palette for ggplot2
+#'
+#' @param palette Choose from 'ochre_palettes' list
 #'
 #' @importFrom ggplot2 scale_colour_manual
 #'
 #' @examples 
+#' library(tidyverse)
 #' ggplot(mtcars, aes(mpg, wt)) + 
 #'   geom_point(aes(colour = factor(cyl))) +     
 #'   scale_colour_ochre(palette="olsen_qual")
@@ -40,12 +41,13 @@ scale_color_ochre <- function(..., palette="namatjira_qual",
     scale_colour_manual(values=ochre_palettes[[palette]])
 }
 
-#' @rdname scale_colour_ochre
 #' @aliases scale_color_ochre
 #' @export
 scale_colour_ochre <- scale_color_ochre
 
-#' @rdname scale_fill_ochre
+#' #' Setup fill palette for ggplot2
+#'
+#' @param palette Choose from 'ochre_palettes' list
 #'
 #' @importFrom ggplot2 scale_fill_manual
 #'
