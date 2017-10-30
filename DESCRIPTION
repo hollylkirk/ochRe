@@ -1,6 +1,6 @@
 Package: ochRe
 Title: Australia-Themed Color Palettes
-Version: 1.0
+Version: 1.0.0
 Authors@R: c(person("Alicia", "Allan", role = c("aut")),
              person("Di", "Cook", role = c("aut")),
              person("Ross", "Gayler", role = c("aut")),
