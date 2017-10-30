@@ -12,13 +12,7 @@ scale_colour_ochre(..., palette = "namatjira_qual", discrete = TRUE,
   alpha = 1, reverse = FALSE)
 }
 \arguments{
-\item{...}{parameters to \code{discrete_scale} or \code{scale_fill_gradientn}}
-
 \item{palette}{Choose from 'ochre_palettes' list}
-
-\item{discrete}{generate a discrete palette? (default: \code{FALSE} - generate continuous palette)}
-
-\item{alpha}{pass through parameter to \code{viridis}}
 
 \item{reverse}{logical, Reverse the order of the colours?}
 }
