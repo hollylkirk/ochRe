@@ -12,7 +12,13 @@ scale_colour_ochre(..., palette = "namatjira_qual", discrete = TRUE,
   alpha = 1, reverse = FALSE)
 }
 \arguments{
+\item{...}{additional arguments to pass to scale_color_gradientn}
+
 \item{palette}{Choose from 'ochre_palettes' list}
+
+\item{discrete}{whether to use a discrete colour palette}
+
+\item{alpha}{transparency}
 
 \item{reverse}{logical, Reverse the order of the colours?}
 }

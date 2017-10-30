@@ -29,6 +29,12 @@ ochre_pal <- function(palette="namatjira_qual", alpha = 1, reverse = FALSE) {
 #' 
 #' @param reverse logical, Reverse the order of the colours?
 #' 
+#' @param alpha transparency
+#' 
+#' @param discrete whether to use a discrete colour palette
+#' 
+#' @param ... additional arguments to pass to scale_color_gradientn
+#'  
 #' @inheritParams viridis::scale_color_viridis
 #'
 #' @importFrom ggplot2 scale_colour_manual
@@ -69,6 +75,10 @@ scale_colour_ochre <- scale_color_ochre
 #' 
 #' @inheritParams viridis::scale_fill_viridis
 #' @inheritParams ochre_pal
+#' 
+#' @param discrete whether to use a discrete colour palette
+#' 
+#' @param ... additional arguments to pass to scale_color_gradientn
 #'
 #' @importFrom ggplot2 scale_fill_manual discrete_scale scale_fill_gradientn
 #'

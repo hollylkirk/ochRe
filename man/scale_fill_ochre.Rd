@@ -8,9 +8,13 @@ scale_fill_ochre(..., palette = "namatjira_qual", discrete = TRUE,
   alpha = 1, reverse = TRUE)
 }
 \arguments{
+\item{...}{additional arguments to pass to scale_color_gradientn}
+
 \item{palette}{Choose from 'ochre_palettes' list}
 
-\item{alpha}{transparency}
+\item{discrete}{whether to use a discrete colour palette}
+
+\item{alpha}{pass through parameter to \code{viridis}}
 
 \item{reverse}{If TRUE, the direction of the colours is reversed.}
 }
