@@ -1,6 +1,17 @@
 #' Australian Colour Palettes
 #' 
-#'A collection of colour palettes inspired by the landscape and wildlife of Australia
+#'A collection of colour palettes inspired by the landscape and wildlife of Australia. The list of available palettes is:
+#' namatjira_qual, namatjira_div
+#' mccrea
+#' parliament
+#' tasmania
+#' nolan_ned
+#' winmar
+#' olsen_qual
+#' williams_pilbara
+#' healthy_reef, dead_reef
+#' galah, lorikeet, jumping_frog
+#' emu_woman_paired
 #'
 #'@examples
 #'
