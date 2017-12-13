@@ -2,7 +2,7 @@
 % Please edit documentation in R/scales.R
 \name{scale_fill_ochre}
 \alias{scale_fill_ochre}
-\title{#' Setup fill palette for ggplot2}
+\title{Setup fill palette for ggplot2}
 \usage{
 scale_fill_ochre(..., palette = "namatjira_qual", discrete = TRUE,
   alpha = 1, reverse = TRUE)
@@ -14,10 +14,10 @@ scale_fill_ochre(..., palette = "namatjira_qual", discrete = TRUE,
 
 \item{discrete}{whether to use a discrete colour palette}
 
-\item{alpha}{pass through parameter to \code{viridis}}
+\item{alpha}{transparency}
 
 \item{reverse}{If TRUE, the direction of the colours is reversed.}
 }
 \description{
-#' Setup fill palette for ggplot2
+Setup fill palette for ggplot2
 }

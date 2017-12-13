@@ -69,7 +69,7 @@ scale_color_ochre <- function(..., palette="namatjira_qual",
 #' @export
 scale_colour_ochre <- scale_color_ochre
 
-#' #' Setup fill palette for ggplot2
+#' Setup fill palette for ggplot2
 #'
 #' @param palette Choose from 'ochre_palettes' list
 #' 
