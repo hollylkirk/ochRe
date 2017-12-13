@@ -78,7 +78,7 @@ scale_colour_ochre <- scale_color_ochre
 #' 
 #' @param discrete whether to use a discrete colour palette
 #' 
-#' @param ... additional arguments to pass to scale_color_gradientn
+#' @param ... additional arguments to pass to scale_fill_gradientn
 #'
 #' @importFrom ggplot2 scale_fill_manual discrete_scale scale_fill_gradientn
 #'

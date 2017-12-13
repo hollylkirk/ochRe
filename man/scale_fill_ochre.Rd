@@ -8,7 +8,7 @@ scale_fill_ochre(..., palette = "namatjira_qual", discrete = TRUE,
   alpha = 1, reverse = TRUE)
 }
 \arguments{
-\item{...}{additional arguments to pass to scale_color_gradientn}
+\item{...}{additional arguments to pass to scale_fill_gradientn}
 
 \item{palette}{Choose from 'ochre_palettes' list}
 
