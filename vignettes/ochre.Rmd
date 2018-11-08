@@ -5,8 +5,10 @@ date: "26 October 2017"
 output: rmarkdown::html_vignette
 vignette: >
     %\VignetteIndexEntry{ochRe}
-    %\VignetteEngine{knitr::rmarkdown}
     %\VignetteEncoding{UTF-8}
+    %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, echo = FALSE, message = FALSE}
@@ -143,7 +145,7 @@ for (curCol in ochre_palettes%>%names()){
     ex <- extent(110, 155, -45, -10)
     elev <- raster::crop(elev, ex)
     elev[elev < 0] <- NA
-    topo <- list(x = xFromCol(elev), y = rev(yFromRow(elev)), 
+    topo <- list(x = xFromCol(elev), y = yFromRow(elev, nrow(elev):1), 
                     z = t(as.matrix(elev))[, nrow(elev):1])
                      par(mar = rep(0, 4), bg = "#444444")
     image(topo, useRaster = TRUE, col = colpal,
