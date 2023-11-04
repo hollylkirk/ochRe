@@ -86,6 +86,16 @@ ochre_palettes <- list(
         "#c07848"
     ),
     
+    # Australian state colours https://commons.wikimedia.org/wiki/File:Australia_States_Map_-_Colours_with_White_Borders.svg
+    states = c(
+        "#741128", # QLD 
+        "#88CFEC", # NSW 
+        "#DBEBE7", # VIC 
+        "#C35E00", # NT 
+        "#FFD800", # WA 
+        "#0645AD", # TAS 
+        "#FF0000") # SA
+    
     # based on the great all tapestry https://www.aph.gov.au/Visit_Parliament/Art/Top_5_Treasures/Great_Hall_Tapestry
     # and house of reps and senate colours https://www.peo.gov.au/learning/closer-look/australias-parliament-house/a-place-for-the-parliament.html
     parliament = c(
